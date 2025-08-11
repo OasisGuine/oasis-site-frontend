@@ -1,13 +1,17 @@
 import React from 'react';
 
 export const processTextWithColors = (text: string): React.ReactNode => {
-  if (!text.includes('<purple>') && !text.includes('<strong>')) {
+  if (!text.includes('<purple>') && !text.includes('<strong>') && !text.includes('<bold>')) {
     return text;
   }
 
   let processedText = text
     .replace(/<purple>/g, '<span class="text-purple font-bold">')
-    .replace(/<\/purple>/g, '</span>');
+    .replace(/<\/purple>/g, '</span>')
+    .replace(/<strong>/g, '<strong>')
+    .replace(/<\/strong>/g, '</strong>')
+    .replace(/<bold>/g, '<strong>')
+    .replace(/<\/bold>/g, '</strong>');
 
   return <span dangerouslySetInnerHTML={{ __html: processedText }} />;
 };

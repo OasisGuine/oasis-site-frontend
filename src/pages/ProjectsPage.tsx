@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 import MainLayout from "@/components/layouts/MainLayout";
+import { processTextWithColors } from "@/utilities/textProcessor";
 
 export default function ProjectsPage() {
   const { t } = useTranslation();
@@ -28,13 +29,13 @@ export default function ProjectsPage() {
     {/* Texto à esquerda */}
     <div className="flex-1 text-start flex flex-col gap-4">
       <h5 className="text-gray font-medium max-w-3xl leading-8">
-        {t("ProjectsPage.section1.description")}
+        {processTextWithColors(t("ProjectsPage.section1.description"))}
       </h5>
       <h5 className="text-gray font-medium max-w-3xl leading-8">
-        {t("ProjectsPage.section1.description2")}
+        {processTextWithColors(t("ProjectsPage.section1.description2"))}
       </h5>
       <h5 className="max-w-3xl text-gray font-medium leading-8">
-        {t("ProjectsPage.section1.description3")}
+        {processTextWithColors(t("ProjectsPage.section1.description3"))}
       </h5>
     </div>
 
@@ -58,7 +59,7 @@ export default function ProjectsPage() {
   </h2>
 
   <h5 className="text-start font-medium leading-8 text-gray">
-    {t("ProjectsPage.section4.description")}
+    {processTextWithColors(t("ProjectsPage.section4.description"))}
   </h5>
    <h5>
      {t("ProjectsPage.section4.space")}
@@ -103,7 +104,7 @@ export default function ProjectsPage() {
             key={i}
             className="text-left text-white font-semibold leading-8 text-sm md:text-base lg:text-lg"
           >
-            {content}
+            {processTextWithColors(content)}
           </li>
         );
       })}
@@ -118,10 +119,10 @@ export default function ProjectsPage() {
   </h5>
   
   <h5 className="text-start text-gray font-semibold leading-8">
-    {t("ProjectsPage.section4.description1")}
+    {processTextWithColors(t("ProjectsPage.section4.description1"))}
   </h5>
   <h4 className="text-center text-gray font-semibold leading-8">
-    {t("ProjectsPage.section4.description2")}
+    {processTextWithColors(t("ProjectsPage.section4.description2"))}
   </h4>
     <h5>
      {t("ProjectsPage.section4.space")}
