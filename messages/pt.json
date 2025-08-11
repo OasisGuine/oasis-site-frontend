@@ -1,0 +1,479 @@
+
+{
+  "Common": {
+    "navbar": {
+      "home": "HOME",
+      "item1": "NOSSO PROJETO",
+      "item2": "QUEM SOMOS",
+      "item3": "COMO AJUDAR",
+      "item4": "CONTATO",
+      "item5": "PORTAL DO DOADOR",
+      "action": "DOE AGORA",
+      "dropdowns": {
+        "item1": "Nossa escola",
+        "item2": "Meta 10k",
+        "item3": "Sobre nós",
+        "item4": "Nossos valores"
+      }
+    },
+    "footer": {
+      "itemLeft1": "Todos os direitos reservados. Copyright ©",
+      "itemLeft2": "Política de Privacidade e Política de Cookies",
+      "itemRight1": "Siga-nos",
+      "itemRight2": "Entre em contato"
+    },
+    "language": "Selecionar Idioma"
+  },
+  "HomePage": {
+    "heroSection": {
+      "title1": "Nutrindo Esperança,<br/> Cultivando Futuros",
+      "subTitle1": "NOSSA MISSÃO É CAPACITAR CRIANÇAS COM EDUCAÇÃO, FÉ E ESPERANÇA PARA UM FUTURO BRILHANTE.",
+      "action1": "QUEM SOMOS",
+      "title2": "Conheça nosso projeto",
+      "subTitle2": "ENTENDA EM DETALHES O MOTIVO DE ESCOLHERMOS A GUINÉ-BISSAU PARA CONSTRUIRMOS NOSSA ESCOLA.",
+      "action2": "NOSSO PROJETO",
+      "title3": "META 10K <br/> A Sala que vai mudar Tudo!",
+      "subTitle3": "Estamos levantando €10 mil para abrir <br/> a PRIMEIRA SALA DE AULA na VILA BANTANDJA em GUINÉ-BISSAU. <br/>",
+      "action3": "PARTICIPE"
+    },
+    "aboutSection": {
+      "title": "SOBRE A OASIS",
+      "subTitle": "Somos uma organização sem fins lucrativos dedicada a <purple>transformar</purple> comunidades por meio da educação acessível e do desenvolvimento sustentável, guiada por princípios <purple>cristãos</purple>.",
+      "item1": {
+        "title": "Qual é o principal propósito da nossa organização?",
+        "subTitle": "Nosso propósito é oferecer <strong>esperança</strong> e oportunidades para crianças em situação de vulnerabilidade, capacitando-as por meio do <strong>conhecimento</strong> e da <strong>fé</strong> para um futuro melhor.",
+        "action": "CONHEÇA A OASIS"
+      }
+    },
+    "helpSection": {
+      "title": "",
+      "subTitle": "Quando o mundo avança, eles ficam para trás…",
+      "descriptionP1": "Enquanto o mundo avança em tecnologia e conforto, centenas de crianças em Bantandja, na Guiné-Bissau, enfrentam a vida sem o BÁSICO: sem escola, sem alimentação regular, sem estrutura ou perspectivas de futuro.",
+      "descriptionP2": "Em uma vila onde mais de 70% da população é ANALFABETA e a maioria vive com menos de $15 dólares por mês, <strong>NÓS DECIDIMOS SER RESPOSTA PARA ESSA SITUAÇÃO!</strong>",
+      "item1": {
+        "title": "Educação",
+        "subTitle": "O seu apoio financeiro de hoje fará a diferença no futuro das crianças beneficiadas pela escola e impactará toda sua nação."
+      },
+      "item2": {
+        "title": "Fé",
+        "subTitle": "Acreditamos em uma confiança firme em Deus, guiando nossas ações com integridade, compaixão e humildade."
+      },
+      "cards": {
+        "item1": {
+          "title": "SAIBA MAIS",
+          "action": "→"
+        },
+        "item2": {
+          "title": "DOAÇÃO MENSAL",
+          "action": "Contribua →"
+        },
+        "item3": {
+          "title": "PARCERIAS",
+          "action": "Saiba Mais →"
+        },
+        "item4": {
+          "title": "DIVULGUE",
+          "action": "Compartilhe →"
+        }
+      },
+      "action": "QUEM SOMOS"
+    },
+    "learnSection": {
+      "title": "META 10K: A SALA QUE VAI MUDAR TUDO!",
+      "subTitle": "Com alegria e senso de missão, estamos lançando uma <strong>campanha para levantar 10.000 euros</strong> com UM OBJETIVO CLARO: <strong>Abrir a primeira sala de aula da Escola Bom Samaritano já em setembro que irá atender inicialmente 40 crianças.</strong>",
+      "subTitle2": "Você também pode fazer parte dessa missão junto conosco!",
+      "action": "DOE AGORA"
+    },
+    "joinSection": {
+      "title": "Venha fazer parte",
+      "subTitle": "A sua oração e intercessão em favor do nosso projeto e de toda a equipe da OASIS fará a diferença para que alcancemos os objetivos compartilhados aqui. Contamos com seu tempo de devoção em nosso favor!",
+      "action": "NOS ENVIE SUA ORAÇÃO"
+    },
+    "motivationSection": {
+      "text": "'Ensinar uma criança é plantar uma semente de esperança que pode florescer para sempre.' - Mary Slessor"
+    },
+    "formSection": {
+      "title": "Entre em contato conosco",
+      "subTitle": "Estamos à disposição para receber suas dúvidas, sugestões, orações e propostas de parceria. Estamos ansiosos para entrar em contato com você!",
+      "action": "ENVIE SUA MENSAGEM",
+      "inputName": "Informe seu nome",
+      "inputEmail": "Informe seu e-mail",
+      "inputMessage": "Insira sua mensagem para nós!"
+    },
+    "footer": {
+      "title": "Acreditamos no poder transformador da educação"
+    }
+  },
+  "ContributePage": {
+    "title": "SEMEIE COM AMOR!",
+    "subTitle": "Juntos, construiremos a escola que a comunidade de Bantandja está ansiosamente esperando.",
+    "otherPaymentMethods": "Você pode doar através dos meios de pagamentos:",
+    "info1": "PIX: 06244093000186",
+    "bankInfoBranch": "Agencia",
+    "bankInfoNumber": "Conta Corrente",
+    "bankInfoName": "OASE ORGÃO DE ASSISTENCIA SOCIAL E ESPIRITUAL",
+    "formSection": {
+      "amount": "Valor",
+      "email": "E-MAIL",
+      "name": "NOME COMPLETO",
+      "card": "NÚMERO DO CARTÃO",
+      "submit": "CONFIRMAR PAGAMENTO",
+      "submitting": "PROCESSANDO...",
+      "currencies": {
+        "eur": "EURO €",
+        "brl": "REAL R$",
+        "usd": "USD $"
+      },
+      "plans": {
+        "monthly": "mensal",
+        "oneTime": "Única",
+        "donation": "doação"
+      },
+      "success": {
+        "title": "Obrigado, sua doação faz a diferença!",
+        "oneTime": "Sua doação única foi processada com sucesso.",
+        "subscription": "Sua doação mensal foi configurada com sucesso.",
+        "return": "Voltar"
+      },
+      "errors": {
+        "loading": "O sistema de pagamento ainda está carregando. Por favor, tente novamente em instantes.",
+        "requiredFields": "Por favor, preencha todos os campos obrigatórios",
+        "invalidAmount": "Por favor, insira um valor válido",
+        "cardElement": "Elemento do cartão não encontrado",
+        "payment": "Ocorreu um erro durante o processamento do seu pagamento",
+        "setup": "Falha ao configurar o pagamento",
+        "subscription": "Falha ao criar assinatura",
+        "unexpected": "Ocorreu um erro inesperado"
+      }
+    },
+    "donorPage": {
+      "text": "Já é um doador? Acesse o portal do doador aqui:",
+      "action": "PORTAL DO DOADOR"
+    }
+  },
+  "ContributeSuccessPage": {
+    "title": "OBRIGADA POR SUA DOAÇÃO!",
+    "action1": "Home",
+    "action2": "CONTRIBUA"
+  },
+  "ContributeCancelPage": {
+    "title": "HOUVE UM ERRO NO PAGAMENTO. POR FAVOR, TENTAR NOVAMENTE.",
+    "action": "CONTRIBUA"
+  },
+  "HelpPage": {
+    "title": "Como você pode ajudar?",
+    "subtitle": "Junte-se a nós para fazer a diferença na vida das crianças",
+    "section1": {
+      "item1": {
+        "title": "Doações financeiras",
+        "action": "CONTRIBUA",
+        "subTitle": "Você também pode doar através dos meios de pagamentos:",
+        "info1": "PIX: 06244093000186",
+        "bankInfoBranch": "Agencia",
+        "bankInfoNumber": "Conta Corrente",
+        "bankInfoName": "OASE ORGÃO DE ASSISTENCIA SOCIAL E ESPIRITUAL",
+        "info3": "Pagamento em cartão:"
+      },
+      "item2": {
+        "title": "Oração e intercessão",
+        "description": "Suas orações pelo projeto e por todo nosso time são muito importantes para nós!"
+      },
+      "item3": {
+        "title": "Divulgação",
+        "description": "Compartilhe nosso projeto para conscientizar o máximo de pessoas a fazerem a diferença na vida de uma criança.",
+        "action": "COMPARTILHE"
+      }
+    },
+    "section2": {
+      "title": "COMO SUA EMPRESA PODE APOIAR ESTA CAUSA?",
+      "subtitle": "Apoiar o Projeto Escola Bom Samaritano é uma oportunidade para empresas que desejam gerar impacto social e deixar um legado de transformação.",
+      "partnerships": {
+        "title": "Parcerias Institucionais",
+        "description": "Empresas podem se tornar doadoras oficiais do projeto e ter sua marca vinculada a essa iniciativa de impacto."
+      },
+      "infrastructure": {
+        "title": "Patrocínio de Infraestrutura",
+        "description": "Apoiar a construção da escola, suporte na criação de atividades extracurriculares como artes e esportivas como também áreas recreativas uma vez que a escola estiver em funcionamento."
+      },
+      "campaigns": {
+        "title": "Campanhas e Mobilização",
+        "description": "Engajar colaboradores e clientes em ações de arrecadação e sensibilização."
+      }
+    }
+  },
+  "ProjectsPage": {
+    "section1": {
+      "title": "CONHEÇA NOSSO PROJETO",
+      "description": "Nosso primeiro projeto nasce em <strong>Bantandja</strong>, uma pequena vila no extremo leste da Guiné-Bissau, com cerca de 646 habitantes.",
+      "description2": "A realidade da comunidade é marcada por mais de <strong>70% de analfabetismo, renda mensal inferior a 15 dólares, insegurança alimentar e ausência quase total de infraestrutura básica</strong>, como escolas e saúde.",
+      "description3": "Para transformar essa realidade, estamos iniciando a <purple>Escola Bom Samaritano</purple>, um espaço que, em sua primeira fase, contará com uma sala de aula para atender 40 crianças, oferecendo educação de qualidade, alimentação diária e um ambiente seguro."
+    },
+    "section2": {
+      "title": "ETAPAS DA ESCOLA BOM SAMARITANO",
+      "item1": {
+        "title": "Captação de Recursos",
+        "description": "Campanha de arrecadação de fundos para a construção: 50.000€: ~R$318,595.92 <ul><li>Sistema de som para as salas de aula</li> <li>Construção de cozinha, refeitório, banheiros e casa para professores</li> <li>Poço artesiano para abastecimento de água</li> <li>Compra de mobiliário, incluindo mesas, cadeiras, armários, fogão, refrigerador</li> <li>Instalação de painéis solares para fornecimento de energia sustentável</li> <li>Muro de proteção ao redor da escola</li></ul>"
+      },
+      "item2": {
+        "title": "Construção da Infraestrutura Escolar",
+        "description": "Construir e equipar a escola para atender às necessidades das crianças da região de Bantandja, desde a contratação de equipes de construção locais até a supervisão do progresso da obra para garantir qualidade e segurança."
+      },
+      "item3": {
+        "title": "Contratação de Professores",
+        "description": "Garantir uma equipe de professores qualificada, alinhada aos valores e visão da Oasis, bem como validada pelo currículo educacional guineense."
+      },
+      "item4": {
+        "title": "Admissão de Alunos",
+        "description": "Admissão de 150 crianças na escola em dois turnos (manhã e tarde) a partir de uma triagem para garantir a inclusão de crianças em situação de maior vulnerabilidade."
+      },
+      "item5": {
+        "title": "Inauguração Oficial da Escola",
+        "description": "Celebração da inauguração da escola com a comunidade local, realizando monitoramento contínuo do funcionamento escolar. Foco essencial em garantir a alimentação dos alunos durante o horário escolar."
+      },
+      "item6": {
+        "title": "Sustentabilidade do Projeto",
+        "description": "Lançamento da campanha 'Eduque uma Criança', onde apoiadores contribuem mensalmente para a manutenção da educação de um aluno e para a expansão da escola, alcançando mais membros da comunidade."
+      }
+    },
+    "section3": {
+      "steps": {
+        "1": {
+          "title": "Captação de Recursos",
+          "description": "Reunir os recursos financeiros necessários para dar início ao projeto. Campanha de arrecadação de fundos para a construção 50.000€ = 318,595.92 reais",
+          "items": {
+            "1": "Sonorização das salas de aula",
+            "2": "Construção de cozinha, refeitório e casas de banho e casa para os professores",
+            "3": "Poço artesiano para abastecimento de água",
+            "4": "Compra de mobilia desde mesas, cadeiras, armários, fogão, frigorífico",
+            "5": "Instalação de painéis solares para fornecimento de energia sustentável",
+            "6": "Muro de proteção ao redor da escola"
+          }
+        },
+        "2": {
+          "title": "Construção da Infraestrutura Escolar",
+          "description": "Construir e equipar a escola para atender às necessidades das crianças da região de Bantandja, desde a contratação de equipes de construção locais, supervisão do progresso da obra para garantir qualidade e segurança."
+        },
+        "3": {
+          "title": "Contratação de Professores",
+          "description": "Garantir uma equipe de professores qualificada, alinhada aos valores e visão da Oasis como também validados pelo currículo educacional guineense."
+        },
+        "4": {
+          "title": "Admissão de Alunos",
+          "description": "Admissão de 150 crianças na escola em dois turnos (manhã e tarde) a partir de uma triagem para garantir inclusão de crianças em situação de maior vulnerabilidade."
+        },
+        "5": {
+          "title": "Abertura da Escola",
+          "description": "Celebração de inauguração da escola com a comunidade local realizando monitoramento contínuo do funcionamento escolar. Foco essencial em garantir a alimentação dos alunos durante o horário escolar."
+        },
+        "6": {
+          "title": "Sustentabilidade do Projeto",
+          "description": "Lançamento da campanha de \"Eduque uma criança\", onde apoiadores contribuem mensalmente para a manutenção de um aluno e para a expansão da escola atendendo cada vez mais a comunidade."
+        }
+      }
+    },
+    "section4": {
+      "title": " Meta 10K: A Sala Que Vai Mudar Tudo",
+      "space":  " ",
+      "description1": "<purple>Prestação de contas é parte essencial do nosso compromisso.</purple> Cada recurso será aplicado com responsabilidade e transparência, porque acreditamos que integridade também educa.",
+      "description2": "<purple>A sala vai ser construída. As crianças vão estudar. E você pode fazer parte disso! </purple>",
+      "description": "Estamos realizando uma campanha de arrecadação com a meta de 10 mil euros para dar os <purple>primeiros passos</purple> concretos na implantação da nossa escola em Bantandja. Esse valor nos permitirá dar os primeiros passos concretos para transformar a realidade de Bantandja, garantindo:",
+      "stats": {
+        "1": {
+          "description": "Legalização e registro oficial da <bold>escola</bold>"
+        },
+        "2": {
+          "description": "Construção da <bold>primeira</bold> sala de aula"
+        },
+        "3": {
+          "description": "<bold>Equipamentos</bold> escolares e mobiliário iniciais"
+        },
+        "4": {
+          "description": "<bold>Instalação</bold> de banheiro e cozinha"
+        },
+        "5": {
+          "description": "Sistema de energia solar para <bold>abastecimento básico</bold>"
+        },
+        "6": {
+          "description": "Escavação de poço para acesso à <bold>água potável</bold>"
+        },
+         "7": {
+          "description": "Portão de <bold>segurança</bold> para proteção dos alunos"
+        },
+          "8": {
+          "description": "Contratação de um <bold>professor</bold> e equipe de apoio local"
+        },
+        "9": {
+          "description": "Início imediato do processo de matrícula das <bold>primeiras crianças</bold>"
+        }
+      }
+    }
+  },
+  "WhoWeArePage": {
+    "section1": {
+      "title": "SOBRE NÓS",
+      "item1": {
+        "title": "Quem Somos",
+        "description": "A <purple>Oasis</purple> é uma organização sem fins lucrativos guiada por princípios cristãos, comprometida em transformar comunidades por meio da educação acessível e do desenvolvimento sustentável."
+      },
+      "item2": {
+        "title": "Nossa Visão",
+        "description": "<purple>Nosso propósito</purple> é quebrar ciclos geracionais de pobreza, oferecendo esperança e oportunidades reais para crianças em situação de vulnerabilidade."
+      },
+      "item3": {
+        "title": "Nossa Missão",
+        "description": "<purple>Acreditamos</purple> que toda criança tem o direito de APRENDER, CRESCER e SONHAR com um futuro diferente."
+      }
+    },
+    "section2": {
+      "title": "NOSSOS VALORES",
+      "item1": {
+        "title": "Esperança",
+        "description": "Nutrimos a esperança ao oferecer oportunidades tangíveis para crescimento, estabilidade e um renovado senso de possibilidade."
+      },
+      "item2": {
+        "title": "Fé",
+        "description": "Acreditamos em uma confiança firme em Deus, guiando nossas ações com integridade, compaixão e humildade."
+      },
+      "item3": {
+        "title": "Transformação",
+        "description": "Acreditamos no poder transformador da educação para equipar indivíduos com as ferramentas e a confiança necessárias para moldar seus destinos e contribuir positivamente para a sociedade."
+      }
+    }
+  },
+  "PrivacyPolicy": {
+    "title": "POLÍTICA DE PRIVACIDADE",
+    "lastUpdated": "Última atualização",
+    "updateDate": "05 de agosto de 2025",
+    "introduction": "A OASE – Órgão de Assistência Social e Espiritual valoriza a privacidade dos seus apoiadores, beneficiários, voluntários e visitantes. Esta política descreve como tratamos os seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD – Lei nº 13.709/2018).",
+    "interpretationTitle": "1. Quem somos",
+    "interpretationText": "A OASE – Órgão de Assistência Social e Espiritual, inscrita no CNPJ sob o nº 06.244.093/0001-86, atua como controladora dos dados pessoais tratados nesta política.",
+    "definitionsTitle": "2. Dados que coletamos",
+    "definitionsIntro": "Podemos coletar os seguintes dados pessoais:",
+    "accountDefTitle": "- Nome completo",
+    "accountDefText": "",
+    "affiliateDefTitle": "- E-mail",
+    "affiliateDefText": "",
+    "companyDefTitle": "- Telefone",
+    "companyDefText": "",
+    "cookiesDefTitle": "- Dados de pagamento (para doações)",
+    "cookiesDefText": "",
+    "countryDefTitle": "- Histórico de doações e interações",
+    "countryDefText": "",
+    "deviceDefTitle": "- Dados de navegação (cookies e IP)",
+    "deviceDefText": "",
+    "personalDataDefTitle": "3. Como coletamos os dados",
+    "personalDataDefText": "A coleta pode ocorrer por: ",
+    "serviceDefTitle": "- Formulários online",
+    "serviceDefText": "(cadastro, contato, doações)",
+    "serviceProviderDefTitle": "- Inscrição em eventos",
+    "serviceProviderDefText": "",
+    "usageDataDefTitle": "- Cookies e tecnologias similares",
+    "usageDataDefText": "",
+    "websiteDefTitle": "- Comunicação direta por e-mail ou telefone",
+    "websiteDefText": "",
+    "youDefTitle": "4. Finalidades da coleta",
+    "youDefText": "Utilizamos os dados para:",
+    "collectingDataTitle": "Processar doações e emitir recibos.",
+    "typesOfDataTitle": "Enviar newsletters e comunicações institucionais ",
+    "personalDataTitle": "Gerir eventos e campanhas sociais ",
+    "personalDataText": "Cumprir obrigações legais",
+    "personalDataEmail": "Melhorar a navegação no nosso site",
+    "personalDataUsage": "5. Compartilhamento de dados",
+    "usageDataTitle": "Não vendemos seus dados com terceiros. Compartilhamentos podem existir nas situações abaixo:",
+    "usageDataText1": "Quando exigido por lei.",
+    "usageDataText2": "Para plataformas de doação, sistemas de e-mail e serviços contratados sob confidencialidade",
+    "usageDataText3": "",
+    "trackingTitle": "6. Segurança dos dados",
+    "trackingText": "Adotamos medidas técnicas e organizacionais para proteger seus dados contra acessos não autorizados, perdas ou destruição.",
+    "trackingCookiesTitle": "7. Retenção",
+    "trackingCookiesText": "Os dados são mantidos apenas pelo tempo necessário para as finalidades descritas ou conforme exigido por lei.",
+    "trackingBeaconsTitle": "8. Seus direitos",
+    "trackingBeaconsText": "Você pode, a qualquer momento:",
+    "trackingBeaconsText2": "Acessar seus dados",
+    "trackingBeaconsText3": "Corrigir dados incorretos",
+    "trackingBeaconsText4": "Solicitar exclusão de dados",
+    "trackingBeaconsText5": "Retirar seu consentimento",
+    "trackingBeaconsText6": "Solicitar cancelamento de doador mensal",
+    "trackingBeaconsText7": "Para exercer seus direitos, entre em contato:",
+    "trackingBeaconsText8": "info@oasisguine.org.",
+
+
+    
+    
+    "cookiesTypesText": "POLÍTICA DE COOKIES",
+    "cookiesNecessaryTitle": "Este site utiliza cookies para melhorar sua experiência e garantir o funcionamento adequado das funcionalidades.",
+    "cookiesNecessaryType": "O que são cookies?",
+    "cookiesNecessaryAdmin": "Cookies são pequenos arquivos salvos no seu dispositivo quando você visita nosso site.",
+    "cookiesNecessaryPurpose": "Eles ajudam a armazenar preferências e a coletar informações para fins analíticos.",
+    "cookiesAcceptanceTitle": "Tipos de cookies usados:",
+    "cookiesAcceptanceType": "- Essenciais: Necessários para funcionamento do site.",
+    "cookiesAcceptanceAdmin": "- Analíticos: Coletam dados para estatísticas de acesso (ex: Google Analytics). ",
+    "cookiesAcceptancePurpose": "- Funcionais: Guardam preferências de idioma ou sessões. ",
+    "cookiesAcceptancePurpose2": "- De terceiros: Utilizados por serviços integrados como vídeos, redes sociais ou sistemas de doação.",
+
+    "cookiesFunctionalityTitle": "Como controlar os cookies?",
+    "cookiesFunctionalityType": "Você pode configurar seu navegador para recusar cookies.",
+    "cookiesFunctionalityAdmin": "No entanto, algumas funcionalidades podem deixar de funcionar corretamente.",
+     "contactText": "Se você tiver alguma dúvida sobre esta Política de Privacidade e Política de Cookie, você pode nos contatar:",
+    "contactEmail": "Por e-mail: info@oasisguine.org",
+    "contactWebsite": "Visitando esta página em nosso site:",
+
+    
+    "cookiesFunctionalityPurpose": "Finalidade: Esses Cookies nos permitem lembrar as escolhas que Você faz quando usa o Site, como lembrar seus detalhes de login ou preferência de idioma. O objetivo desses Cookies é fornecer a Você uma experiência mais pessoal e evitar que Você tenha que reinserir suas preferências cada vez que usar o Site.",
+    "cookiesMoreInfo": "Para mais informações sobre os cookies que usamos e suas escolhas em relação aos cookies, visite nossa Política de Cookies ou a seção Cookies de nossa Política de Privacidade.",
+    "useOfDataTitle": "Uso de Seus Dados Pessoais",
+    "useOfDataIntro": "A Empresa pode usar Dados Pessoais para os seguintes fins:",
+    "useProvideService": "Para fornecer e manter nosso Serviço, inclusive para monitorar o uso do nosso Serviço.",
+    "useManageAccount": "Para gerenciar Sua Conta: para gerenciar Seu registro como usuário do Serviço. Os Dados Pessoais que Você fornece podem dar acesso a diferentes funcionalidades do Serviço que estão disponíveis para Você como usuário registrado.",
+    "usePerformContract": "Para a execução de um contrato: o desenvolvimento, conformidade e realização do contrato de compra para os produtos, itens ou serviços que Você comprou ou de qualquer outro contrato conosco através do Serviço.",
+    "useContactYou": "Para contatá-lo: Para contatá-lo por e-mail, chamadas telefônicas, SMS ou outras formas equivalentes de comunicação eletrônica, como notificações push de aplicativos móveis referentes a atualizações ou comunicações informativas relacionadas às funcionalidades, produtos ou serviços contratados, incluindo atualizações de segurança, quando necessário ou razoável para sua implementação.",
+    "useProvideNews": "Para fornecer a Você novidades, ofertas especiais e informações gerais sobre outros bens, serviços e eventos que oferecemos e que são semelhantes aos que Você já comprou ou perguntou, a menos que Você tenha optado por não receber tais informações.",
+    "useManageRequests": "Para gerenciar Suas solicitações: Para atender e gerenciar Suas solicitações para Nós.",
+    "useBusinessTransfers": "Para transferências de negócios: Podemos usar Suas informações para avaliar ou conduzir uma fusão, alienação, reestruturação, reorganização, dissolução ou outra venda ou transferência de alguns ou todos os Nossos ativos, seja como uma empresa em continuidade ou como parte de falência, liquidação ou processo similar, no qual Dados Pessoais mantidos por Nós sobre os usuários do nosso Serviço estão entre os ativos transferidos.",
+    "useOtherPurposes": "Para outros fins: Podemos usar Suas informações para outros fins, como análise de dados, identificação de tendências de uso, determinação da eficácia de nossas campanhas promocionais e para avaliar e melhorar nosso Serviço, produtos, serviços, marketing e sua experiência.",
+    "sharingDataIntro": "Podemos compartilhar Suas informações pessoais nas seguintes situações:",
+    "shareWithProviders": "Com Fornecedores de Serviços: Podemos compartilhar Suas informações pessoais com Fornecedores de Serviços para monitorar e analisar o uso de nosso Serviço, para contatá-lo.",
+    "shareForTransfers": "Para transferências de negócios: Podemos compartilhar ou transferir Suas informações pessoais em conexão com, ou durante negociações de, qualquer fusão, venda de ativos da Empresa, financiamento ou aquisição de todo ou parte de Nosso negócio para outra empresa.",
+    "shareWithAffiliates": "Com Afiliadas: Podemos compartilhar Suas informações com Nossas afiliadas, caso em que exigiremos que essas afiliadas honrem esta Política de Privacidade. Afiliadas incluem Nossa empresa matriz e quaisquer outras subsidiárias, parceiros de joint venture ou outras empresas que Nós controlamos ou que estão sob controle comum conosco.",
+    "shareWithPartners": "Com parceiros de negócios: Podemos compartilhar Suas informações com Nossos parceiros de negócios para oferecer a Você certos produtos, serviços ou promoções.",
+    "shareWithUsers": "Com outros usuários: quando Você compartilha informações pessoais ou interage de outra forma nas áreas públicas com outros usuários, essas informações podem ser vistas por todos os usuários e podem ser distribuídas publicamente fora.",
+    "shareWithConsent": "Com Seu consentimento: Podemos divulgar Suas informações pessoais para qualquer outro fim com Seu consentimento.",
+    "retentionTitle": "Retenção de Seus Dados Pessoais",
+    "retentionText1": "A Empresa reterá Seus Dados Pessoais apenas pelo tempo necessário para os fins estabelecidos nesta Política de Privacidade. Reteremos e usaremos Seus Dados Pessoais na medida necessária para cumprir nossas obrigações legais (por exemplo, se formos obrigados a reter seus dados para cumprir as leis aplicáveis), resolver disputas e fazer cumprir nossos acordos e políticas legais.",
+    "retentionText2": "A Empresa também reterá Dados de Uso para fins de análise interna. Os Dados de Uso são geralmente retidos por um período mais curto, exceto quando esses dados são usados para fortalecer a segurança ou para melhorar a funcionalidade do Nosso Serviço, ou Somos legalmente obrigados a reter esses dados por períodos mais longos.",
+    "transferTitle": "Transferência de Seus Dados Pessoais",
+    "transferText1": "Suas informações, incluindo Dados Pessoais, são processadas nos escritórios operacionais da Empresa e em quaisquer outros lugares onde as partes envolvidas no processamento estejam localizadas. Isso significa que essas informações podem ser transferidas para — e mantidas em — computadores localizados fora do Seu estado, província, país ou outra jurisdição governamental onde as leis de proteção de dados podem ser diferentes daquelas da Sua jurisdição.",
+    "transferText2": "Seu consentimento a esta Política de Privacidade seguido pelo envio de tais informações representa Seu acordo com essa transferência.",
+    "transferText3": "A Empresa tomará todas as medidas razoavelmente necessárias para garantir que Seus dados sejam tratados com segurança e de acordo com esta Política de Privacidade e nenhuma transferência de Seus Dados Pessoais ocorrerá para uma organização ou um país, a menos que existam controles adequados, incluindo a segurança de Seus dados e outras informações pessoais.",
+    "deleteDataTitle": "Excluir Seus Dados Pessoais",
+    "deleteDataText1": "Você tem o direito de excluir ou solicitar que Nós ajudemos a excluir os Dados Pessoais que coletamos sobre Você.",
+    "deleteDataText2": "Nosso Serviço pode dar a Você a capacidade de excluir certas informações sobre Você do próprio Serviço.",
+    "deleteDataText3": "Você pode atualizar, corrigir ou excluir Suas informações a qualquer momento, fazendo login na Sua Conta, se tiver uma, e visitando a seção de configurações da conta que permite gerenciar Suas informações pessoais. Você também pode nos contatar para solicitar acesso, correção ou exclusão de qualquer informação pessoal que Você nos forneceu. Por favor, note, no entanto, que podemos precisar reter certas informações quando temos uma obrigação legal ou base legal para fazê-lo.",
+    "disclosureTitle": "Divulgação de Seus Dados Pessoais",
+    "businessTransactionsTitle": "Transações Comerciais",
+    "businessTransactionsText": "Se a Empresa estiver envolvida em uma fusão, aquisição ou venda de ativos, Seus Dados Pessoais podem ser transferidos. Forneceremos aviso antes que Seus Dados Pessoais sejam transferidos e se tornem sujeitos a uma Política de Privacidade diferente.",
+    "lawEnforcementTitle": "Aplicação da lei",
+    "lawEnforcementText": "Sob certas circunstâncias, a Empresa pode ser obrigada a divulgar Seus Dados Pessoais se exigido por lei ou em resposta a solicitações válidas por autoridades públicas (por exemplo, um tribunal ou uma agência governamental).",
+    "otherLegalTitle": "Outros requisitos legais",
+    "otherLegalText": "A Empresa pode divulgar Seus Dados Pessoais na crença de boa fé de que tal ação é necessária para:",
+    "legalObligation": "Cumprir uma obrigação legal",
+    "protectCompany": "Proteger e defender os direitos ou propriedade da Empresa",
+    "preventWrongdoing": "Prevenir ou investigar possíveis irregularidades em conexão com o Serviço",
+    "protectUsers": "Proteger a segurança pessoal dos Usuários do Serviço ou do público",
+    "protectLiability": "Proteger contra responsabilidade legal",
+    "securityTitle": "Segurança de Seus Dados Pessoais",
+    "securityText": "A segurança de Seus Dados Pessoais é importante para Nós, mas lembre-se que nenhum método de transmissão pela Internet ou método de armazenamento eletrônico é 100% seguro. Embora Nós nos esforcemos para usar meios comercialmente aceitáveis para proteger Seus Dados Pessoais, Nós não podemos garantir sua segurança absoluta.",
+    "childrenTitle": "Privacidade das Crianças",
+    "childrenText1": "Nosso Serviço não se dirige a menores de 13 anos. Não coletamos intencionalmente informações de identificação pessoal de ninguém com menos de 13 anos. Se Você é pai ou responsável e está ciente de que Seu filho nos forneceu Dados Pessoais, entre em contato conosco. Se tomarmos conhecimento de que coletamos Dados Pessoais de qualquer pessoa com menos de 13 anos sem verificação do consentimento dos pais, tomamos medidas para remover essas informações de Nossos servidores.",
+    "childrenText2": "Se precisarmos contar com o consentimento como base legal para processar Suas informações e Seu país exigir o consentimento de um dos pais, podemos exigir o consentimento de Seus pais antes de coletarmos e usarmos essas informações.",
+    "linksTitle": "Links para Outros Sites",
+    "linksText1": "Nosso Serviço pode conter links para outros sites que não são operados por Nós. Se Você clicar em um link de terceiros, Você será direcionado para o site desse terceiro. Recomendamos fortemente que Você revise a Política de Privacidade de cada site que visitar.",
+    "linksText2": "Não temos controle e não assumimos responsabilidade pelo conteúdo, políticas de privacidade ou práticas de quaisquer sites ou serviços de terceiros.",
+    "changesTitle": "Alterações a esta Política de Privacidade",
+    "changesText1": "Podemos atualizar Nossa Política de Privacidade de tempos em tempos. Notificaremos Você sobre quaisquer alterações, publicando a nova Política de Privacidade nesta página.",
+    "changesText2": "Informaremos Você por e-mail e/ou por um aviso destacado em Nosso Serviço, antes que a alteração se torne efetiva e atualizaremos a data de 'Última atualização' no topo desta Política de Privacidade.",
+    "changesText3": "Você é aconselhado a revisar esta Política de Privacidade periodicamente para quaisquer alterações. As alterações a esta Política de Privacidade são efetivas quando são publicadas nesta página.",
+    "contactTitle": "Entre em Contato Conosco"
+   
+  }
+}

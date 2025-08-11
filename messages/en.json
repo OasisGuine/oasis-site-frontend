@@ -1,0 +1,419 @@
+{
+  "Common": {
+    "navbar": {
+      "home": "HOME",
+      "item1": "OUR PROJECT",
+      "item2": "WHO WE ARE",
+      "item3": "GET INVOLVED",
+      "item4": "GET IN TOUCH",
+      "item5": "DONOR PORTAL",
+      "action": "DONATE",
+      "dropdowns": {
+        "item1": "Our School",
+        "item2": "10K Goal",
+        "item3": "About Us",
+        "item4": "Our Values"
+      }
+    },
+    "footer": {
+      "itemLeft1": "All rights reserved. Copyright ©",
+      "itemLeft2": "Privacy & Cookie Policy",
+      "itemRight1": "Follow us",
+      "itemRight2": "Get in touch"
+    },
+    "language": "Select Language"
+  },
+  "HomePage": {
+    "heroSection": {
+      "title1": "Nurturing hope,<br/> cultivating futures",
+      "subTitle1": "Our mission is to empower children with education, faith, and hope for a bright future.",
+      "action1": "LEARN MORE",
+      "title2": "Get to know our project",
+      "subTitle2": "Get to know why we chose Guinea-Bissau to<br/> build our school.",
+      "action2": "KNOW MORE",
+      "title3": "10K GOAL <br/> The Classroom That Will Change Everything!",
+      "subTitle3": "We’re raising €10,000 to build the <br/> FIRST CLASSROOM in Bantandja, Guinea-Bissau.<br/>",
+      "action3": "JOIN US"
+    },
+    "aboutSection": {
+      "title": "LEARN MORE ABOUT OÁSIS",
+      "subTitle": "We are a non-profit organization dedicated to <purple>transforming</purple> communities through accessible education and sustainable development, guided by <purple>Christian</purple> principles.",
+      "item1": {
+        "title": "What is the main purpose of our organization?",
+        "subTitle": "Our purpose is to offer hope and opportunities to children in vulnerable situations, empowering them through knowledge and faith for a better future.",
+        "action": "LEARN MORE"
+      }
+    },
+    "helpSection": {
+      "title": "",
+      "subTitle": "While the world moves forward, they are left behind…",
+      "descriptionP1": "As the world advances in technology and comfort, hundreds of children in Bantandja, Guinea-Bissau, face life without the BASICS: no school, no regular meals, no structure, and no hope for the future.",
+      "descriptionP2": "In a village where over 70% of the population is illiterate and most survive on less than $15 a month: <strong> WE HAVE CHOSEN TO BECOME PART OF THE SOLUTION.</strong>",
+      "item1": {
+        "title": "Education",
+        "subTitle": "Your financial support today will make a difference in the future of the children benefiting from the school and will impact their entire nation."
+      },
+      "item2": {
+        "title": "Faith",
+        "subTitle": "We believe in a firm trust in God, guiding our actions with integrity, compassion, and humility."
+      },
+      "cards": {
+        "item1": {
+          "title": "DONATE",
+          "action": "Help Now →"
+        },
+        "item2": {
+          "title": "MONTHLY DONATION",
+          "action": "Contribute →"
+        },
+        "item3": {
+          "title": "PARTNERSHIPS",
+          "action": "Learn More →"
+        },
+        "item4": {
+          "title": "SPREAD OUT",
+          "action": "Share →"
+        }
+      },
+      "action": "WHO WE ARE"
+    },
+    "learnSection": {
+      "title": "10K GOAL: THE CLASSROOM THAT WILL CHANGE EVERYTHING!",
+      "subTitle": "With joy and a deep sense of mission, we are launching a campaign to raise <strong>€10,000 with ONE CLEAR GOAL</strong>: to open the first classroom of the Good Samaritan School this <strong>September, initially serving 40 children.</strong>",
+      "subTitle2": "You can also be part of this mission with us!",
+      "action": "HELP NOW"
+    },
+    "joinSection": {
+      "title": "Come be a part",
+      "subTitle": "Your prayer and intercession for our project and the entire Oasis team will make a difference in achieving the goals shared here. We count on your devotion time on our behalf!",
+      "action": "SEND US YOUR PRAYER"
+    },
+    "motivationSection": {
+      "text": "'Teaching a child is planting a seed of hope that can bloom forever.' — Mary Slessor"
+    },
+    "formSection": {
+      "title": "Get in touch with us",
+      "subTitle": "We welcome your questions, suggestions, prayers, and partnership inquiries. We look forward to connecting with you!",
+      "action": "SEND US YOUR MESSAGE",
+      "inputName": "Name",
+      "inputEmail": "E-mail",
+      "inputMessage": "Type your message to us"
+    },
+    "footer": {
+      "title": "We believe in the transformative power of education"
+    }
+  },
+  "ContributePage": {
+    "title": "SOW IN LOVE!",
+    "subTitle": "Together, we will build the school that the Bantaja community has been eagerly awaiting.",
+    "otherPaymentMethods": "You can also donate through the following payment methods:",
+    "info1": "PIX: 06244093000186",
+    "bankInfoBranch": "Agency",
+    "bankInfoNumber": "Checking Account",
+    "bankInfoName": "OASE SOCIAL AND SPIRITUAL ASSISTANCE ORGANIZATION",
+    "formSection": {
+      "amount": "AMOUNT",
+      "email": "EMAIL",
+      "name": "FULL NAME",
+      "card": "CREDIT CARD NUMBER",
+      "submit": "CONFIRM PAYMENT",
+      "submitting": "PROCESSING...",
+      "currencies": {
+        "eur": "EURO €",
+        "brl": "REAL R$",
+        "usd": "USD $"
+      },
+      "plans": {
+        "monthly": "monthly",
+        "oneTime": "One-time",
+        "donation": "donation"
+      },
+      "success": {
+        "title": "Thank you, your donation makes a difference!",
+        "oneTime": "Your one-time donation has been successfully processed.",
+        "subscription": "Your monthly donation has been successfully set up.",
+        "return": "Return"
+      },
+      "errors": {
+        "loading": "Payment system is still loading. Please try again in a moment.",
+        "requiredFields": "Please fill out all required fields",
+        "invalidAmount": "Please enter a valid amount",
+        "cardElement": "Card element not found",
+        "payment": "An error occurred while processing your payment",
+        "setup": "Failed to setup payment",
+        "subscription": "Failed to create subscription",
+        "unexpected": "An unexpected error occurred"
+      }
+    },
+    "donorPage": {
+      "text": "Already a donor? You can access the donor portal here:",
+      "action": "DONOR PORTAL"
+    }
+  },
+  "ContributeSuccessPage": {
+    "title": "THANK YOU FOR YOUR DONATION!",
+    "action1": "Home",
+    "action2": "CONTRIBUTE"
+  },
+  "ContributeCancelPage": {
+    "title": "THERE WAS AN ERROR IN THE PAYMENT. PLEASE TRY AGAIN.",
+    "action": "CONTRIBUTE"
+  },
+  "HelpPage": {
+    "title": "How can you help?",
+    "subtitle": "Join us in making a difference in children's lives",
+    "section1": {
+      "item1": {
+        "title": "Financial Donations",
+        "subTitle": "You can also donate through the following payment methods:",
+        "action": "MAKE A DONATION NOW",
+        "info1": "PIX: 06244093000186",
+        "bankInfoBranch": "Agency",
+        "bankInfoNumber": "Checking Account",
+        "bankInfoName": "OASE SOCIAL AND SPIRITUAL ASSISTANCE ORGANIZATION",
+        "info3": "Payment by card:"
+      },
+      "item2": {
+        "title": "Prayer and Intercession",
+        "description": "Your prayers for the project and our entire team are very important to us!"
+      },
+      "item3": {
+        "title": "Spread out",
+        "description": "Share our project to raise awareness and help more people make a difference in a child's life.",
+        "action": "SHARE"
+      }
+    },
+    "section2": {
+      "title": "HOW CAN YOUR COMPANY SUPPORT THIS CAUSE?",
+      "subtitle": "Supporting the Good Samaritan School Project is an opportunity for companies that wish to generate social impact and leave a legacy of transformation.",
+      "partnerships": {
+        "title": "Institutional Partnerships",
+        "description": "Institutional partnerships are crucial for the sustainability and growth of the project. They provide long-term support and resources, enabling us to expand our reach and impact."
+      },
+      "infrastructure": {
+        "title": "Infrastructure Sponsorship",
+        "description": "Infrastructure sponsorship is essential for the construction and maintenance of our school. It helps us build a safe and functional environment for our students."
+      },
+      "campaigns": {
+        "title": "Campaigns and Mobilization",
+        "description": "Campaigns and mobilization are key to raising awareness and gathering support for our project. They help us reach more people and generate more resources."
+      }
+    }
+  },
+  "ProjectsPage": {
+    "section1": {
+      "title": "GET TO KNOW OUR PROJECT",
+      "description": "Our first project is taking root in <strong>Bantandja</strong>, a small village in the far east of Guinea-Bissau, with approximately 646 inhabitants.",
+      "description2": "The community faces a harsh reality: <strong>over 70% illiteracy</strong>, monthly <strong>incomes below $15</strong>, <strong>food insecurity, and an almost complete lack of basic infrastructure</strong> such as schools and healthcare.",
+      "description3": "To transform this reality, we are launching the <purple>Good Samaritan School</purple> — a space that, in its first phase, will include a <purple>classroom for 40 children</purple>, offering quality education, daily meals, and a safe environment."
+    },
+    "section2": {
+      "title": "STAGES OF THE BOM SAMARITAN SCHOOL",
+      "item1": {
+        "title": "Fundraising",
+        "description": "Fundraising Campaign for Construction: 50,000€: ~R$318,595.92 <ul><li>Sound system for the classrooms</li> <li>Construction of kitchen, cafeteria, bathrooms, and teachers' house</li> <li>Artesian well for water supply</li> <li>Purchase of furniture, including tables, chairs, cabinets, stove, refrigerator</li> <li>Installation of solar panels for sustainable energy supply</li> <li>Protective wall around the school</li></ul>"
+      },
+      "item2": {
+        "title": "Construction of School Infrastructure",
+        "description": "Build and equip the school to meet the needs of the children in the Bantaja region, from hiring local construction teams to overseeing the progress of the work to ensure quality and safety."
+      },
+      "item3": {
+        "title": "Recruitment of Teachers",
+        "description": "Ensure a qualified team of teachers, aligned with the values and vision of Oasis, as well as validated by the Guinean educational curriculum."
+      },
+      "item4": {
+        "title": "Admission of Students",
+        "description": "Admission of 150 children to the school in two shifts (morning and afternoon) starting with a screening process to ensure the inclusion of children in situations of greater vulnerability."
+      },
+      "item5": {
+        "title": "Official Opening of the School",
+        "description": "Celebration of the school's inauguration with the local community, conducting continuous monitoring of the school's operations. A key focus on ensuring students receive meals during school hours."
+      },
+      "item6": {
+        "title": "Sustainability of the Project",
+        "description": "Launch of the 'Educate a Child' campaign, where supporters contribute monthly to maintain a student's education and to expand the school, reaching more members of the community."
+      }
+    },
+    "section3": {
+      "steps": {
+        "1": {
+          "title": "Resource Collection",
+          "description": "Collect the necessary resources to start the project. Campaign to raise funds for construction 50.000€ = 318,595.92 reais",
+          "items": {
+            "1": "Soundproofing of classrooms",
+            "2": "Construction of kitchen, dining room and bathrooms and teachers' house",
+            "3": "Artesian well for water supply",
+            "4": "Purchase of furniture from tables, chairs, cabinets, stove, refrigerator",
+            "5": "Installation of solar panels for sustainable energy supply",
+            "6": "School perimeter wall"
+          }
+        },
+        "2": {
+          "title": "School Infrastructure Construction",
+          "description": "Build and equip the school to meet the needs of children in the Bantaja region, from local construction teams, supervision of the progress of the work to ensure quality and safety."
+        },
+        "3": {
+          "title": "Teacher Hiring",
+          "description": "Ensure a qualified team of teachers aligned with the values and vision of Oasis as also validated by the Guinean educational curriculum."
+        },
+        "4": {
+          "title": "Student Admission",
+          "description": "Admission of 150 children at the school in two shifts (morning and afternoon) from a screening to ensure inclusion of children in vulnerable situations."
+        },
+        "5": {
+          "title": "School Opening",
+          "description": "Celebration of the school opening with the local community performing continuous monitoring of school operation. Essential focus on ensuring the food of the students during school hours."
+        },
+        "6": {
+          "title": "Project Sustainability",
+          "description": "Launch of the 'Educate a child' campaign, where supporters contribute monthly to maintain one student and expand the school to serve more communities."
+        }
+      }
+    },
+    "section4": {
+      "title": "10K Goal: The Classroom that will Change Everything",
+       "space":  " ",
+      "description": "We are running a fundraising campaign with a goal of €10,000 to take the <purple>first concrete steps</purple> in establishing our school in Bantandja. This amount will allow us to begin transforming the reality of Bantandja by ensuring:",
+      "description1": "<purple>Accountability is a key part of our commitment.</purple> Every resource will be used with responsibility and transparency, because we believe integrity also teaches.",
+      "description2": "<purple>The classroom will be built. The children will learn. And you can be part of it!</purple>",
+      "stats": {
+        "1": {
+          "description": "Legalization and official registration of the school"
+        },
+        "2": {
+          "description": "Construction of the first classroom"
+        },
+        "3": {
+          "description": "Initial school equipment and furniture"
+        },
+        "4": {
+          "description": "Installation of bathroom and kitchen facilities"
+        },
+        "5": {
+          "description": "Solar power system for basic energy supply"
+        },
+         "6": {
+          "description": "Well drilling for access to clean water"
+        },
+        "7": {
+          "description": "Security gate to protect the students"
+        },
+        "8": {
+          "description": "Hiring of a teacher and local support staff"
+        },
+        "9": {
+          "description": "Immediate start of the enrollment process for the first children"
+        }
+      }
+    }
+  },
+  "WhoWeArePage": {
+    "section1": {
+      "title": "ABOUT US",
+      "item1": {
+        "title": "Who We Are",
+        "description": "<purple>Oasis</purple> is a nonprofit organization guided by Christian principles, committed to transforming communities through accessible education and sustainable development."
+      },
+      "item2": {
+        "title": "Our Vision",
+        "description": "<purple>Our purpose</purple> is to break generational cycles of poverty by offering hope and real opportunities to vulnerable children."
+      },
+      "item3": {
+        "title": "Our Mission",
+        "description": "<purple>We believe</purple> every child has the right to LEARN, GROW, and DREAM of a different future."
+      }
+    },
+    "section2": {
+      "title": "OUR VALUES",
+      "item1": {
+        "title": "Hope",
+        "description": "We nourish hope by offering tangible opportunities for growth, stability, and a renewed sense of possibility."
+      },
+      "item2": {
+        "title": "Faith",
+        "description": "We believe in a firm trust in God, guiding our actions with integrity, compassion, and humility."
+      },
+      "item3": {
+        "title": "Transformation",
+        "description": "We believe in the transformative power of education to equip individuals with the tools and confidence needed to shape their destinies and contribute positively to society."
+      }
+    }
+  },
+"PrivacyPolicy": {
+  "title": "PRIVACY POLICY",
+  "lastUpdated": "Last updated",
+  "updateDate": "August 5, 2025",
+  "introduction": "OASE – Organization for Social and Spiritual Assistance values the privacy of its supporters, beneficiaries, volunteers, and visitors. This policy describes how we handle your personal data, in compliance with the General Data Protection Law (LGPD – Law No. 13.709/2018).",
+  "interpretationTitle": "1. Who we are",
+  "interpretationText": "OASE – Organization for Social and Spiritual Assistance, registered under CNPJ No. 06.244.093/0001-86, acts as the controller of the personal data processed in this policy.",
+  "definitionsTitle": "2. Data we collect",
+  "definitionsIntro": "We may collect the following personal data:",
+  "accountDefTitle": "- Full name",
+  "accountDefText": "",
+  "affiliateDefTitle": "- Email",
+  "affiliateDefText": "",
+  "companyDefTitle": "- Phone number",
+  "companyDefText": "",
+  "cookiesDefTitle": "- Payment data (for donations)",
+  "cookiesDefText": "",
+  "countryDefTitle": "- Donation and interaction history",
+  "countryDefText": "",
+  "deviceDefTitle": "- Browsing data (cookies and IP)",
+  "deviceDefText": "",
+  "personalDataDefTitle": "3. How we collect data",
+  "personalDataDefText": "Collection may occur through:",
+  "serviceDefTitle": "- Online forms",
+  "serviceDefText": "(registration, contact, donations)",
+  "serviceProviderDefTitle": "- Event registration",
+  "serviceProviderDefText": "",
+  "usageDataDefTitle": "- Cookies and similar technologies",
+  "usageDataDefText": "",
+  "websiteDefTitle": "- Direct communication via email or phone",
+  "websiteDefText": "",
+  "youDefTitle": "4. Purposes of collection",
+  "youDefText": "We use the data to:",
+  "collectingDataTitle": "Process donations and issue receipts.",
+  "typesOfDataTitle": "Send newsletters and institutional communications",
+  "personalDataTitle": "Manage events and social campaigns",
+  "personalDataText": "Comply with legal obligations",
+  "personalDataEmail": "Improve navigation on our website",
+  "personalDataUsage": "5. Data sharing",
+  "usageDataTitle": "We do not sell your data to third parties. Sharing may occur in the situations below:",
+  "usageDataText1": "When required by law.",
+  "usageDataText2": "For donation platforms, email systems, and contracted services under confidentiality",
+  "usageDataText3": "",
+  "trackingTitle": "6. Data security",
+  "trackingText": "We adopt technical and organizational measures to protect your data against unauthorized access, loss, or destruction.",
+  "trackingCookiesTitle": "7. Retention",
+  "trackingCookiesText": "Data is retained only for as long as necessary for the purposes described or as required by law.",
+  "trackingBeaconsTitle": "8. Your rights",
+  "trackingBeaconsText": "You may, at any time:",
+  "trackingBeaconsText2": "Access your data",
+  "trackingBeaconsText3": "Correct inaccurate data",
+  "trackingBeaconsText4": "Request data deletion",
+  "trackingBeaconsText5": "Withdraw your consent",
+  "trackingBeaconsText6": "Request cancellation of monthly donations",
+  "trackingBeaconsText7": "To exercise your rights, contact us:",
+  "trackingBeaconsText8": "info@oasisguine.org.",
+
+  "cookiesTypesText": "COOKIE POLICY",
+  "cookiesNecessaryTitle": "This site uses cookies to improve your experience and ensure the proper functioning of features.",
+  "cookiesNecessaryType": "What are cookies?",
+  "cookiesNecessaryAdmin": "Cookies are small files saved on your device when you visit our website.",
+  "cookiesNecessaryPurpose": "They help store preferences and collect information for analytical purposes.",
+  "cookiesAcceptanceTitle": "Types of cookies used:",
+  "cookiesAcceptanceType": "- Essential: Necessary for the website to function.",
+  "cookiesAcceptanceAdmin": "- Analytical: Collect data for access statistics (e.g., Google Analytics).",
+  "cookiesAcceptancePurpose": "- Functional: Store language preferences or sessions.",
+  "cookiesAcceptancePurpose2": "- Third-party: Used by integrated services such as videos, social networks, or donation systems.",
+
+  "cookiesFunctionalityTitle": "How to control cookies?",
+  "cookiesFunctionalityType": "You can set your browser to refuse cookies.",
+  "cookiesFunctionalityAdmin": "However, some features may no longer work properly.",
+   "contactTitle": "Contact Us",
+  "contactText": "If you have any questions about this Privacy Policy and Cookie Policy, you can contact us:",
+  "contactEmail": "By email: info@oasisguine.org",
+  "contactWebsite": "By visiting this page on our website:"
+}
+
+  }

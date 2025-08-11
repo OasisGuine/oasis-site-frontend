@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-green: #529e8a;
+  --color-green-underlay: rgba(82, 158, 138, 0.8);
+  --color-purple: #65509f;
+  --color-gray: #6a6161;
+  --color-light-pink: #fef6f5;
+}
+
+@layer base {
+  h1 {
+    @apply text-[38px] lg:text-[48px] font-[800] tracking-normal;
+  }
+
+  h2 {
+    @apply text-[32px] lg:text-[40px] font-[800] tracking-[1px];
+  }
+
+  h3 {
+    @apply text-[28px] lg:text-[35px] font-[700] tracking-[1px];
+  }
+
+  h4 {
+    @apply text-[18px] lg:text-[24px] font-[700] tracking-[1px];
+  }
+
+  h5 {
+    @apply text-[16px] lg:text-[20px] font-[600] tracking-[1px];
+  }
+
+  p {
+    @apply text-[14px] lg:text-[16px] font-[400] tracking-[0.5px] leading-relaxed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+}
+
+@layer utilities {
+  .cs-x-container {
+    @apply px-4 sm:px-8 md:px-40 2xl:px-80;
+  }
+
+  .cs-y-container {
+    @apply py-8 2xl:py-16;
+  }
+
+  .cs-section-with-bg {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+
+.cs-x-container_navbar-1 {
+  @apply px-4 sm:px-8 md:px-16 2xl:px-32;
+}
+
+.cs-x-container_footer-1 {
+  @apply px-0 md:px-16 2xl:px-48;
+}
