@@ -1,4 +1,6 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+import { handleAnchorNavigation } from '@/utilities/scrollToAnchor'
 
 // Pages
 import HomePage from '@/pages/HomePage'
@@ -11,6 +13,27 @@ import ProjectsPage from '@/pages/ProjectsPage'
 import WhoWeArePage from '@/pages/WhoWeArePage'
 
 function App() {
+  const location = useLocation()
+
+  useEffect(() => {
+    const cleanup = handleAnchorNavigation()
+    return cleanup
+  }, [])
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const element = document.getElementById(location.hash.replace('#', ''))
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          })
+        }
+      }, 100)
+    }
+  }, [location])
+
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />

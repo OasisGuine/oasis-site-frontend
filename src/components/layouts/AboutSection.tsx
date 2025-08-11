@@ -6,7 +6,7 @@ const AboutSection = () => {
 
   return (
     <section
-      id="#sobre-nós"
+      id="sobre-nos"
       className="cs-x-container cs-y-container flex flex-col items-center gap-8"
     >
       <div className="text-center max-w-4xl">
