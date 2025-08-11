@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"; 
 import MainLayout from "@/components/layouts/MainLayout";
 import { processTextWithColorComponents } from "@/utilities/textProcessor";
+import { getAssetUrl } from "@/utils/assets";
 
 export default function WhoWeArePage() {
     const { t } = useTranslation();
@@ -17,7 +18,7 @@ export default function WhoWeArePage() {
             heroSectionSlides={[
                 {
                     id: 1,
-                    imageSrc: '/assets/img/all/5.png',
+                    imageSrc: getAssetUrl('/assets/img/all/5.png'),
                 }
             ]}
             heroHeightVariant="1/2"
@@ -32,7 +33,7 @@ export default function WhoWeArePage() {
 <div className="flex flex-col xl:flex-row gap-12 items-center">
   <div className="hidden xl:block relative w-full xl:w-1/2 h-[500px]">
     <img
-      src="/assets/img/all/Aline-guine.png"
+      src={getAssetUrl('/assets/img/all/Aline-guine.png')}
       alt="Kids Bantandja icons"
       className="w-full h-full object-cover drop-shadow-md rounded-xl"
     />
@@ -40,7 +41,7 @@ export default function WhoWeArePage() {
 
   <div className="block xl:hidden relative w-full h-[500px]">
     <img
-      src="/assets/img/all/bantaja-kids.png"
+      src={getAssetUrl('/assets/img/all/bantaja-kids.png')}
       alt="Kids Bantandja"
       className="w-full h-full object-cover drop-shadow-md rounded-xl object-contain"
     />

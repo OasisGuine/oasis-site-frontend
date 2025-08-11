@@ -4,6 +4,7 @@ import HelpSection from "@/components/layouts/HelpSection";
 import MotivationSection from "@/components/layouts/MotivationSection";
 import LearnSection from "@/components/layouts/LearnSection";
 import FormSection from "@/components/layouts/FormSection";
+import { getAssetUrl } from "@/utils/assets";
 
 export default function HomePage() {
   return (
@@ -15,7 +16,7 @@ export default function HomePage() {
           subTitleTranslationKey: 'HomePage.heroSection.subTitle1',
           actionTranslationKey: 'HomePage.heroSection.action1',
           actionLink: '/who-we-are',
-          imageSrc: '/assets/img/all/boy-smile.png'
+          imageSrc: getAssetUrl('/assets/img/all/boy-smile.png')
         },
         {
           id: 2,
@@ -23,7 +24,7 @@ export default function HomePage() {
           subTitleTranslationKey: 'HomePage.heroSection.subTitle2',
           actionTranslationKey: 'HomePage.heroSection.action2',
           actionLink: '/projects',
-          imageSrc: '/assets/img/all/kids-smile-flower.png',
+          imageSrc: getAssetUrl('/assets/img/all/kids-smile-flower.png'),
         },
         {
           id: 3,
@@ -31,7 +32,7 @@ export default function HomePage() {
           subTitleTranslationKey: 'HomePage.heroSection.subTitle3',
           actionTranslationKey: 'HomePage.heroSection.action3',
           actionLink: '/projects#meta-10k',
-          imageSrc: '/assets/img/all/meta10k-banner.png',
+          imageSrc: getAssetUrl('/assets/img/all/meta10k-banner.png'),
           imgPosition: "top",
         }
       ]}

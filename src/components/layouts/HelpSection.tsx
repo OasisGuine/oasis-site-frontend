@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Button from "../inputs/Button";
 import { Link } from "react-router-dom";
+import { getAssetUrl } from "@/utils/assets";
 
 const HelpSection = () => {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ const HelpSection = () => {
       
         <div className="absolute inset-0 -z-10">
         <img
-          src="/assets/img/all/light-pink-background.png"
+          src={getAssetUrl("/assets/img/all/light-pink-background.png")}
           alt="pink background"
           className="w-full h-full object-cover"
         />
@@ -21,7 +22,7 @@ const HelpSection = () => {
 
       <div className="hidden xl:block absolute inset-y-0 right-30 w-1/2 -z-10">
         <img
-          src="/assets/img/all/kids-school-icon.png"
+          src={getAssetUrl("/assets/img/all/kids-school-icon.png")}
           alt="students kids smiling"
           className="w-full h-full object-cover object-right"
         />
@@ -30,12 +31,12 @@ const HelpSection = () => {
       {/* Bloco sobreposto entre texto e imagem */}
       <div className="hidden xl:flex flex-col gap-y-12 absolute z-20 left-[58%] top-[17%] -translate-x-1/2 -translate-y-1/2 p-6 w-[200px] h-[200px] max-w-md">
         <img
-          src="/assets/img/icon/small-backpack 1.png"
+          src={getAssetUrl("/assets/img/icon/small-backpack 1.png")}
           alt="backpack"
           className="w-[120px] h-[120px] object-cover"
         />
         <img
-          src="/assets/img/icon/small-bulb 2.png"
+          src={getAssetUrl("/assets/img/icon/small-bulb 2.png")}
           alt="bulb"
           className="w-[80px] h-[80px] object-cover rotate-16"
         />

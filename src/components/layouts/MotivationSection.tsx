@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import clsx from 'clsx'
+import { getAssetUrl } from '@/utils/assets'
 
 const MotivationSection = () => {
   const { t } = useTranslation()
@@ -9,7 +10,7 @@ const MotivationSection = () => {
       {/* Fundo roxo ocupando toda a largura da seção */}
       <div className="absolute inset-0 -z-10">
         <img
-          src="/assets/img/all/purple-background.png"
+          src={getAssetUrl("/assets/img/all/purple-background.png")}
           alt="purple background"
           className="w-full h-full object-cover"
         />
@@ -19,7 +20,7 @@ const MotivationSection = () => {
         {/* Container flex para ícone e texto */}
         <div className="flex items-center gap-4 max-w-4xl mx-auto">
           <img
-            src="/assets/img/icon/small-clipboard-with-pen.png"
+            src={getAssetUrl("/assets/img/icon/small-clipboard-with-pen.png")}
             alt="notebook-pen"
             className="w-13 sm:w-20 md:w-20 lg:w-24 xl:w-30"
           />

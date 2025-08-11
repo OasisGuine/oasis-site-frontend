@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { getAssetUrl } from "@/utils/assets";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -18,7 +19,7 @@ const Footer = () => {
 
       {/* CENTER */}
       <img
-        src="/assets/img/logo/white-logo-no-description.png"
+        src={getAssetUrl("/assets/img/logo/white-logo-no-description.png")}
         alt="Oasis logo in white."
         className="h-full w-full object-contain max-h-[50px] max-[915px]:max-h-[40px] md:max-h-[50px] flex-1 max-md:order-1 max-md:w-auto"
       />
@@ -30,14 +31,14 @@ const Footer = () => {
           <div className="flex gap-2 h-[30px]">
             <a href="https://www.instagram.com/umoasisnaguine?igsh=NW1zdWZseGM4cmZ5" target="_blank" rel="noopener noreferrer">
               <img
-                src="/assets/img/icon/instagram.svg"
+                src={getAssetUrl("/assets/img/icon/instagram.svg")}
                 alt="Instagram icon in white."
                 className="h-full w-full object-contain"
               />
             </a>
             <a href="https://www.facebook.com/share/19xtMZ98yG/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
               <img
-                src="/assets/img/icon/facebook.svg"
+                src={getAssetUrl("/assets/img/icon/facebook.svg")}
                 alt="Facebook icon in white."
                 className="h-full w-full object-contain"
               />

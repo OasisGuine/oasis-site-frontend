@@ -4,6 +4,7 @@ import Button from "@/components/inputs/Button";
 import MainLayout from "@/components/layouts/MainLayout";
 import PaymentForm from "@/components/inputs/PaymentForm";
 import { RoundedIcon } from "@/components/ui/icons";
+import { getAssetUrl } from "@/utils/assets";
 
 const DONOR_PORTAL_URL = import.meta.env.VITE_DONOR_PORTAL_URL || "";
 
@@ -15,7 +16,7 @@ export default function ContributePage() {
       heroSectionSlides={[
         {
           id: 1,
-          imageSrc: "/assets/img/all/2.png",
+          imageSrc: getAssetUrl("/assets/img/all/2.png"),
         },
       ]}
       heroHeightVariant="1/2"
@@ -26,7 +27,7 @@ export default function ContributePage() {
             <div className="hidden md:block md:w-1/2 relative h-96 md:h-auto">
               <img
                 alt="Bantaja community child"
-                src="/assets/img/all/donate_img.png"
+                src={getAssetUrl("/assets/img/all/donate_img.png")}
                 className="object-cover w-full h-full"
               />
             </div>
@@ -47,7 +48,7 @@ export default function ContributePage() {
             <div className="flex items-start gap-4">
               <RoundedIcon
                 className="bg-transparent w-[90px] xl:w-[90px]"
-                src="/assets/img/icon/portugal1.png"
+                src={getAssetUrl("/assets/img/icon/portugal1.png")}
                 alt="PIX"
               />
 
@@ -68,7 +69,7 @@ export default function ContributePage() {
             <div className="flex items-start gap-4">
               <RoundedIcon
                 className="bg-transparent w-[90px] xl:w-[90px]"
-                src="/assets/img/icon/brazil1.png"
+                src={getAssetUrl("/assets/img/icon/brazil1.png")}
                 alt="Bank"
               />
               <div className="mt-2 font-bold text-gray">

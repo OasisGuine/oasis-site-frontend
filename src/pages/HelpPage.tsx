@@ -5,6 +5,7 @@ import MainLayout from "@/components/layouts/MainLayout";
 import Button from "@/components/inputs/Button";
 import clsx from "clsx";
 import { RoundedIcon } from "@/components/ui/icons";
+import { getAssetUrl } from "@/utils/assets";
 
 export default function HelpPage() {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ export default function HelpPage() {
   const heroSlides = [
     {
       id: 1,
-      imageSrc: "/assets/img/all/13.png",
+      imageSrc: getAssetUrl("/assets/img/all/13.png"),
     },
   ];
 
@@ -21,7 +22,7 @@ export default function HelpPage() {
   const cards = [
     {
       id: 1,
-      image: "/assets/img/all/kids-together.png",
+      image: getAssetUrl("/assets/img/all/kids-together.png"),
       title: "section1.item1.title",
       subTitle: "section1.item1.subTitle",
       component: (
@@ -29,7 +30,7 @@ export default function HelpPage() {
           <div className="flex items-center">
             <RoundedIcon
               className="bg-transparent"
-              src="/assets/img/icon/fi-ss-chart-set-theory.png"
+              src={getAssetUrl("/assets/img/icon/fi-ss-chart-set-theory.png")}
               alt="PIX"
             />
             <p className="text-gray font-semibold">
@@ -40,7 +41,7 @@ export default function HelpPage() {
           <div className="flex items-start">
             <RoundedIcon
               className="bg-transparent"
-              src="/assets/img/icon/fi-ss-bank.png"
+              src={getAssetUrl("/assets/img/icon/fi-ss-bank.png")}
               alt="Bank"
             />
             <p className="text-gray font-semibold">   
@@ -67,7 +68,7 @@ export default function HelpPage() {
             <div className="flex items-center">
               <RoundedIcon
                 className="bg-transparent"
-                src="/assets/img/icon/fi-ss-money.png"
+                src={getAssetUrl("/assets/img/icon/fi-ss-money.png")}
                 alt="Bank"
               />
               <p className="text-gray font-semibold">
@@ -83,13 +84,13 @@ export default function HelpPage() {
     },
     {
       id: 2,
-      image: "/assets/img/all/15.png",
+      image: getAssetUrl("/assets/img/all/15.png"),
       title: "section1.item2.title",
       description: "section1.item2.description",
     },
     {
       id: 3,
-      image: "/assets/img/all/16.jpeg",
+      image: getAssetUrl("/assets/img/all/16.jpeg"),
       title: "section1.item3.title",
       description: "section1.item3.description",
       action: "section1.item3.action",
@@ -101,21 +102,21 @@ export default function HelpPage() {
   const section2Items = [
     {
       id: 1,
-      image: "/assets/img/all/19.png",
+      image: getAssetUrl("/assets/img/all/19.png"),
       title: "section2.partnerships.title",
       description: "section2.partnerships.description",
       alt: "Partnerships",
     },
     {
       id: 2,
-      image: "/assets/img/all/18.png",
+      image: getAssetUrl("/assets/img/all/18.png"),
       title: "section2.infrastructure.title",
       description: "section2.infrastructure.description",
       alt: "Infrastructure",
     },
     {
       id: 3,
-      image: "/assets/img/all/25.png",
+      image: getAssetUrl("/assets/img/all/25.png"),
       title: "section2.campaigns.title",
       description: "section2.campaigns.description",
       alt: "Campaigns",

@@ -2,6 +2,7 @@ import MainLayout from "@/components/layouts/MainLayout2";
 import Button from "@/components/inputs/Button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { getAssetUrl } from "@/utils/assets";
 
 export default function SuccessPage() {
     const { t } = useTranslation();
@@ -11,7 +12,7 @@ export default function SuccessPage() {
             heroSectionSlides={[
                 {
                     id: 1,
-                    imageSrc: '/assets/img/all/3.png',
+                    imageSrc: getAssetUrl('/assets/img/all/3.png'),
                 }
             ]}
         >

@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import MainLayout from "@/components/layouts/MainLayout";
 import { processTextWithColors } from "@/utilities/textProcessor";
+import { getAssetUrl } from "@/utils/assets";
 
 export default function ProjectsPage() {
   const { t } = useTranslation();
@@ -11,7 +12,7 @@ export default function ProjectsPage() {
       heroSectionSlides={[
         {
           id: 1,
-          imageSrc: "/assets/img/all/3.png",
+          imageSrc: getAssetUrl("/assets/img/all/3.png"),
           imgPosition: "30%",
         },
       ]}
@@ -38,7 +39,7 @@ export default function ProjectsPage() {
 
     <div className="relative h-[250px] w-[300px] xl:w-[400px] xl:h-[300px] xl:ml-auto mx-auto">
     <img
-    src="/assets/img/all/kids-water.png"
+    src={getAssetUrl("/assets/img/all/kids-water.png")}
     alt="kids water"
     className="w-full h-full object-cover"
     />
@@ -67,7 +68,7 @@ export default function ProjectsPage() {
 >
   <div className="absolute inset-0 -z-10">
     <img
-      src="/assets/img/all/purple-background.png"
+      src={getAssetUrl("/assets/img/all/purple-background.png")}
       alt="purple background"
       className="w-full h-full object-cover"
     />
@@ -75,7 +76,7 @@ export default function ProjectsPage() {
 
   <div className="hidden xl:flex flex-col w-full h-64 xl:min-h-[400px] items-left justify-start relative">
     <img
-      src="/assets/img/all/kids-icons.png"
+      src={getAssetUrl("/assets/img/all/kids-icons.png")}
       alt="students kids smiling"
       className="w-full h-full object-contain"
       style={{ objectPosition: '18% center' }}

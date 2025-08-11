@@ -6,6 +6,7 @@ import clsx from "clsx";
 import Button from "../inputs/Button";
 import Dropdown from "../inputs/Dropdown";
 import { SidebarDrawer } from "./Drawer";
+import { getAssetUrl } from "@/utils/assets";
 
 
 const navLinks = [
@@ -78,11 +79,11 @@ const Navbar = () => {
       <div className="h-full flex items-center">
         <Link to="/">
           <img
-            src={`/assets/img/logo/${
+            src={getAssetUrl(`/assets/img/logo/${
               scrolled
                 ? "black-logo-no-description.png"
                 : "white-logo-no-description.png"
-            }`}
+            }`)}
             alt="Oasis logo."
             className="h-[2.81rem] w-auto object-contain transition duration-200 ease-in-out"
           />
@@ -151,7 +152,7 @@ const Navbar = () => {
           aria-label="Open menu"
         >
           <img 
-            src={`/assets/img/icon/mobile-menu-${scrolled ? 'black' : 'white'}.svg`} 
+            src={getAssetUrl(`/assets/img/icon/mobile-menu-${scrolled ? 'black' : 'white'}.svg`)} 
             alt="Menu icon"
             className="w-6 h-6" 
           />

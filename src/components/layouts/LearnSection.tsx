@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import Button from '../inputs/Button'
 import { Link } from 'react-router-dom';
+import { getAssetUrl } from '@/utils/assets';
 
 const LearnSection = () => {
     const { t } = useTranslation()
@@ -16,7 +17,7 @@ const LearnSection = () => {
   {/* IMAGEM À ESQUERDA */}
   <div className="relative w-full xl:w-1/2 h-[400px]">
     <img
-      src="/assets/img/all/kids-school.png"
+      src={getAssetUrl("/assets/img/all/kids-school.png")}
       alt="Kids at school"
       className="w-full h-full object-cover drop-shadow-md"
       style={{ objectPosition: 'top 40%' }}

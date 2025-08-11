@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from '../inputs/Button';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
+import { getAssetUrl } from '@/utils/assets';
 
 const FormSection = () => {
     const { t } = useTranslation();
@@ -40,7 +41,7 @@ const FormSection = () => {
          {/* ✅ Imagem de fundo absoluta corrigida */}
         <div className="absolute inset-0 -z-10">
           <img
-            src="/assets/img/all/light-pink-background.png"
+            src={getAssetUrl("/assets/img/all/light-pink-background.png")}
             alt="pink background"
             className="w-full h-full object-cover"
           />
@@ -48,7 +49,7 @@ const FormSection = () => {
                 <div className='grow flex flex-col gap-2 lg:gap-4'>
                     <div className='flex items-center gap-4'>
                         <div className='w-10 h-10 rounded-full bg-white flex justify-center items-center'>
-                            <img src='/assets/img/icon/message-icon.png' alt='Group of people icon' className='w-10 h-10' />
+                            <img src={getAssetUrl('/assets/img/icon/message-icon.png')} alt='Group of people icon' className='w-10 h-10' />
                         </div>
                         <h3 className='text-purple'>{t("HomePage.formSection.title")}</h3>
                     </div>
@@ -87,7 +88,7 @@ const FormSection = () => {
                     {success && <p className='text-green-600'>{success}</p>}
                 </div>
                 <div className='hidden xl:block p-16 relative min-w-[50%] h-auto'>
-                    <img src='/assets/img/all/Group 1.png' alt='Boys smiling to teacher' className='w-full h-full object-contain rounded-lg' />
+                    <img src={getAssetUrl('/assets/img/all/Group 1.png')} alt='Boys smiling to teacher' className='w-full h-full object-contain rounded-lg' />
                 </div>
             </div>
         </section>

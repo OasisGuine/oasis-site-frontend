@@ -1,5 +1,6 @@
 import MainLayout from "@/components/layouts/MainLayout";
 import { useTranslation } from "react-i18next";
+import { getAssetUrl } from "@/utils/assets";
 
 const SITE_URL = import.meta.env.VITE_SITE_URL;
 
@@ -11,7 +12,7 @@ export default function PrivacyPolicyPage() {
             heroSectionSlides={[
                 {
                     id: 1,
-                    imageSrc: '/assets/img/all/6.jpeg',               
+                    imageSrc: getAssetUrl('/assets/img/all/6.jpeg'),               
                 }
             ]}
             heroHeightVariant="1/2"
