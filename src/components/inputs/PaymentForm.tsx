@@ -9,17 +9,11 @@ import {
 import type { StripeCardElement } from '@stripe/stripe-js';
 import { useTranslation } from "react-i18next";
 import Button from "../inputs/Button";
+import { stripeApi, ApiError } from '../../lib/api';
 
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY || "");
 
-const PRICE_1_USD = import.meta.env.VITE_PRICE_1_USD || ""
-const PRICE_1_EUR = import.meta.env.VITE_PRICE_1_EUR || ""
-const PRICE_2_USD = import.meta.env.VITE_PRICE_2_USD || ""
-const PRICE_2_EUR = import.meta.env.VITE_PRICE_2_EUR || ""
-const PRICE_3_USD = import.meta.env.VITE_PRICE_3_USD || ""
-const PRICE_3_EUR = import.meta.env.VITE_PRICE_3_EUR || ""
-const PRICE_4_USD = import.meta.env.VITE_PRICE_4_USD || ""
-const PRICE_4_EUR = import.meta.env.VITE_PRICE_4_EUR || ""
+// Price IDs are no longer needed - we use dynamic pricing with amount + currency
 
 function DonationForm() {
   const { t } = useTranslation()
@@ -40,28 +34,22 @@ function DonationForm() {
     value: string;
     label: string;
     period: string;
-    eurPriceId: string;
-    usdPriceId: string;
   }
   
   const donationOptions: DonationOption[] = [
-   { value: '12,00', label: '12,00', period: t('ContributePage.formSection.plans.monthly'), eurPriceId: PRICE_1_EUR, usdPriceId: PRICE_1_USD},
-   { value: '24,00', label: '24,00', period: t('ContributePage.formSection.plans.monthly'), eurPriceId: PRICE_2_EUR, usdPriceId: PRICE_2_USD},
-   { value: '48,00', label: '48,00', period: t('ContributePage.formSection.plans.monthly'), eurPriceId: PRICE_3_EUR, usdPriceId: PRICE_3_USD},
-   { value: '96,00', label: '96,00', period: t('ContributePage.formSection.plans.monthly'), eurPriceId: PRICE_4_EUR, usdPriceId: PRICE_4_USD},
-   { value: 'custom', label: t('ContributePage.formSection.plans.oneTime'), period: t('ContributePage.formSection.plans.donation'), eurPriceId: '', usdPriceId: ''}
+   { value: '12,00', label: '12,00', period: t('ContributePage.formSection.plans.monthly')},
+   { value: '24,00', label: '24,00', period: t('ContributePage.formSection.plans.monthly')},
+   { value: '48,00', label: '48,00', period: t('ContributePage.formSection.plans.monthly')},
+   { value: '96,00', label: '96,00', period: t('ContributePage.formSection.plans.monthly')},
+   { value: 'custom', label: t('ContributePage.formSection.plans.oneTime'), period: t('ContributePage.formSection.plans.donation')}
   ];
   
   interface SelectedPlan {
-    eurPriceId: string;
-    usdPriceId: string;
     name: string;
     price: number;
   }
   
   const [selectedPlan, setSelectedPlan] = useState<SelectedPlan>({
-    eurPriceId: donationOptions[1].eurPriceId,
-    usdPriceId: donationOptions[1].usdPriceId,
     name: `${donationOptions[1].label} ${donationOptions[1].period}`,
     price: parseFloat(donationOptions[1].value.replace(',', '.'))
   });
@@ -77,8 +65,6 @@ function DonationForm() {
       const selectedOption = donationOptions.find(opt => opt.value === amount);
       if (selectedOption) {
         setSelectedPlan({
-          eurPriceId: selectedOption.eurPriceId,
-          usdPriceId: selectedOption.usdPriceId,
           name: `${selectedOption.label} ${selectedOption.period}`,
           price: parseFloat(selectedOption.value.replace(',', '.'))
         });
@@ -139,60 +125,50 @@ function DonationForm() {
       return;
     }
 
-    const setupResponse = await fetch('/api/setup-intent', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
+    try {
+      const setupData = await stripeApi.setupIntent({
         customer_name: fullName,
         customer_email: email,
-      }),
-    });
-    
-    if (!setupResponse.ok) {
-      const errorData = await setupResponse.json();
-      throw new Error(errorData.error || t('ContributePage.formSection.errors.setup'));
-    }
-    
-    const setupData = await setupResponse.json();
-    
-    const { error: setupError, setupIntent } = await stripe.confirmCardSetup(
-      setupData.clientSecret,
-      {
-        payment_method: {
-          card: cardElement,
-          billing_details: {
-            name: fullName,
-            email: email,
+      });
+      
+      const { error: setupError, setupIntent } = await stripe.confirmCardSetup(
+        setupData.clientSecret,
+        {
+          payment_method: {
+            card: cardElement,
+            billing_details: {
+              name: fullName,
+              email: email,
+            },
           },
-        },
+        }
+      );
+      
+      if (setupError) {
+        throw new Error(setupError.message);
       }
-    );
-    
-    if (setupError) {
-      throw new Error(setupError.message);
-    }
-    
-    let priceId = ""
-    
-    if (currency === "eur") {
-  priceId = selectedPlan.eurPriceId;
-      } else {
-  priceId = selectedPlan.usdPriceId;
+      
+      // Calculate amount in cents based on selected plan
+      const amountInCents = Math.round(selectedPlan.price * 100);
+      
+      // Validate currency
+      if (!['eur', 'usd'].includes(currency.toLowerCase())) {
+        throw new Error(`Unsupported currency: ${currency}`);
       }
-    
-    const subscriptionResponse = await fetch('/api/create-subscription', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
+      
+      await stripeApi.createSubscription({
         customerId: setupData.customerId,
-        paymentMethodId: setupIntent.payment_method,
-        priceId: priceId,
-      }),
-    });
-    
-    if (!subscriptionResponse.ok) {
-      const errorData = await subscriptionResponse.json();
-      throw new Error(errorData.error || t('ContributePage.formSection.errors.subscription'));
+        paymentMethodId: setupIntent.payment_method as string,
+        amount: amountInCents,
+        currency: currency.toLowerCase(), // Ensure lowercase for Stripe API
+        interval: 'month'
+      });
+      
+    } catch (error) {
+      if (error instanceof ApiError) {
+        throw new Error(error.message);
+      }
+      throw new Error(t('ContributePage.formSection.errors.subscription'));
     }
   };
   
@@ -202,42 +178,42 @@ function DonationForm() {
       return;
     }
     
-    const amount = customAmount || '50,00';
-    
-    const paymentResponse = await fetch('/api/create-payment', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        amount: parseFloat(amount.replace(',', '.')) * 100,
-        customer_name: fullName,
-        customer_email: email,
-        description: 'One-time donation',
-        currency: currency
-      }),
-    });
-    
-    if (!paymentResponse.ok) {
-      const errorData = await paymentResponse.json();
-      throw new Error(errorData.error || t('ContributePage.formSection.errors.payment'));
-    }
-    
-    const paymentData = await paymentResponse.json();
-    
-    const { error: paymentError } = await stripe.confirmCardPayment(
-      paymentData.clientSecret,
-      {
-        payment_method: {
-          card: cardElement,
-          billing_details: {
-            name: fullName,
-            email: email,
-          },
-        },
+    try {
+      const amount = customAmount || '50,00';
+      const amountInCents = Math.round(parseFloat(amount.replace(',', '.')) * 100);
+      
+      // Validate currency
+      if (!['eur', 'usd'].includes(currency.toLowerCase())) {
+        throw new Error(`Unsupported currency: ${currency}`);
       }
-    );
-    
-    if (paymentError) {
-      throw new Error(paymentError.message);
+      
+      const paymentData = await stripeApi.createPayment({
+        amount: amountInCents,
+        currency: currency.toLowerCase() // Ensure lowercase for Stripe API
+      });
+      
+      const { error: paymentError } = await stripe.confirmCardPayment(
+        paymentData.clientSecret,
+        {
+          payment_method: {
+            card: cardElement,
+            billing_details: {
+              name: fullName,
+              email: email,
+            },
+          },
+        }
+      );
+      
+      if (paymentError) {
+        throw new Error(paymentError.message);
+      }
+      
+    } catch (error) {
+      if (error instanceof ApiError) {
+        throw new Error(error.message);
+      }
+      throw new Error(t('ContributePage.formSection.errors.payment'));
     }
   };
   

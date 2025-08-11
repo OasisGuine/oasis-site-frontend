@@ -3,6 +3,7 @@ import Button from '../inputs/Button';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { getAssetUrl } from '@/utils/assets';
+import { emailApi, ApiError } from '../../lib/api';
 
 const FormSection = () => {
     const { t } = useTranslation();
@@ -18,19 +19,23 @@ const FormSection = () => {
         e.preventDefault();
         setLoading(true);
 
-        const response = await fetch('/api/send-email', {
-            method: 'POST',
-            body: JSON.stringify(formData),
-            headers: { 'Content-Type': 'application/json' },
-        });
+        try {
+            await emailApi.sendEmail({
+                name: formData.name,
+                email: formData.email,
+                message: formData.message,
+            });
 
-        setLoading(false);
-
-        if (response.ok) {
-            setSuccess('Message sent successfully!');
+            setSuccess(t('HomePage.formSection.success') || 'Message sent successfully!');
             setFormData({ name: '', email: '', message: '' });
-        } else {
-            setSuccess('Failed to send message.');
+        } catch (error) {
+            if (error instanceof ApiError) {
+                setSuccess(`Error: ${error.message}`);
+            } else {
+                setSuccess(t('HomePage.formSection.error') || 'Failed to send message.');
+            }
+        } finally {
+            setLoading(false);
         }
     };
 
