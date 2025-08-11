@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fontsource/baloo-2": "^5.2.6",
     "@formatjs/intl-localematcher": "^0.6.0",
     "@stripe/react-stripe-js": "^3.4.0",
     "@stripe/stripe-js": "^6.0.0",

@@ -9,6 +9,9 @@
 }
 
 @layer base {
+  * {
+    font-family: 'Baloo 2', cursive, system-ui, -apple-system, sans-serif;
+  }
   h1 {
     @apply text-[38px] lg:text-[48px] font-[800] tracking-normal;
   }
