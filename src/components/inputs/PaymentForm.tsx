@@ -152,7 +152,7 @@ function DonationForm() {
       const amountInCents = Math.round(selectedPlan.price * 100);
       
       // Validate currency
-      if (!['eur', 'usd'].includes(currency.toLowerCase())) {
+      if (!['eur', 'usd', 'brl'].includes(currency.toLowerCase())) {
         throw new Error(`Unsupported currency: ${currency}`);
       }
       
@@ -183,7 +183,7 @@ function DonationForm() {
       const amountInCents = Math.round(parseFloat(amount.replace(',', '.')) * 100);
       
       // Validate currency
-      if (!['eur', 'usd'].includes(currency.toLowerCase())) {
+      if (!['eur', 'usd', 'brl'].includes(currency.toLowerCase())) {
         throw new Error(`Unsupported currency: ${currency}`);
       }
       
@@ -266,6 +266,7 @@ function DonationForm() {
           >
             <option value="eur">{t('ContributePage.formSection.currencies.eur')}</option>
             <option value="usd">{t('ContributePage.formSection.currencies.usd')}</option>
+            <option value="brl">{t('ContributePage.formSection.currencies.brl')}</option>
           </select>
           {isCustomAmount ? (
             <input
@@ -295,6 +296,7 @@ function DonationForm() {
           >
             <option value="eur">{t('ContributePage.formSection.currencies.eur')}</option>
             <option value="usd">{t('ContributePage.formSection.currencies.usd')}</option>
+            <option value="brl">{t('ContributePage.formSection.currencies.brl')}</option>
           </select>
         </div>
         <div className="w-12/12 md:w-9/12 px-2">
