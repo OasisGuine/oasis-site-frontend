@@ -20,13 +20,10 @@ export default function ProjectsPage() {
 
 <section className="cs-x-container cs-y-container flex flex-col gap-8 xl:gap-12 leading-tight">
 
-  {/* Título centralizado */}
   <h2 className="text-green xl:text-center font-bold">{t("ProjectsPage.section1.title")}</h2>
 
-  {/* Texto à esquerda e imagem à direita */}
   <div className="flex flex-col xl:flex-row gap-8 items-center xl:items-start">
     
-    {/* Texto à esquerda */}
     <div className="flex-1 text-start flex flex-col gap-4">
       <h5 className="text-gray font-medium max-w-3xl leading-8">
         {processTextWithColors(t("ProjectsPage.section1.description"))}
@@ -39,7 +36,6 @@ export default function ProjectsPage() {
       </h5>
     </div>
 
-   {/* Imagem centralizada no mobile, à direita no desktop */}
     <div className="relative h-[250px] w-[300px] xl:w-[400px] xl:h-[300px] xl:ml-auto mx-auto">
     <img
     src="/assets/img/all/kids-water.png"
@@ -69,7 +65,6 @@ export default function ProjectsPage() {
 <section
   className="cs-x-container relative grid grid-cols-1 xl:grid-cols-2 items-stretch xl:min-h-[400px]"
 >
-  {/* Fundo roxo absoluto atrás da grid */}
   <div className="absolute inset-0 -z-10">
     <img
       src="/assets/img/all/purple-background.png"
@@ -78,7 +73,6 @@ export default function ProjectsPage() {
     />
   </div>
 
-  {/* Coluna esquerda: imagem cobrindo tudo */}
   <div className="hidden xl:flex flex-col w-full h-64 xl:min-h-[400px] items-left justify-start relative">
     <img
       src="/assets/img/all/kids-icons.png"
@@ -88,7 +82,6 @@ export default function ProjectsPage() {
     />
   </div>
 
-  {/* Coluna direita: lista dinâmica */}
   <div className="flex flex-col justify-center gap-4 cs-y-container">
     <ul className="list-disc marker:text-[12px] md:marker:text-[14px] list-inside space-y-2 md:space-y-3">
       {[...Array(9)].map((_, i) => {
@@ -97,7 +90,7 @@ export default function ProjectsPage() {
         try {
           content = t(key);
         } catch {
-          content = `Tradução ausente: ${key}`;
+          content = `Translation missing: ${key}`;
         }
         return (
           <li
@@ -112,7 +105,6 @@ export default function ProjectsPage() {
   </div>
 </section>
 
-{/* Texto adicional fora da grid */}
 <div   className="cs-x-container flex flex-col xl:items-center items-stretch gap-4 xl:min-h-[100px]">
   <h5>
      {t("ProjectsPage.section4.space")}

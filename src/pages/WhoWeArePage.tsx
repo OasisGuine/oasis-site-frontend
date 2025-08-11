@@ -23,17 +23,13 @@ export default function WhoWeArePage() {
             heroHeightVariant="1/2"
         >
             
-  {/* quem somos updated */}
 
 <section className="cs-x-container cs-y-container flex flex-col gap-12">
-  {/* Título centralizado */}
   <div id="sobre-nós" className="flex justify-start lg:justify-center">
     <h1 className="text-green">{t('WhoWeArePage.section1.title')}</h1>
   </div>
 
-  {/* Imagem e texto lado a lado */}
 <div className="flex flex-col xl:flex-row gap-12 items-center">
-  {/* Imagem desktop */}
   <div className="hidden xl:block relative w-full xl:w-1/2 h-[500px]">
     <img
       src="/assets/img/all/Aline-guine.png"
@@ -42,7 +38,6 @@ export default function WhoWeArePage() {
     />
   </div>
 
-  {/* Imagem mobile (apenas em xs) */}
   <div className="block xl:hidden relative w-full h-[500px]">
     <img
       src="/assets/img/all/bantaja-kids.png"
@@ -51,7 +46,6 @@ export default function WhoWeArePage() {
     />
   </div>
 
-    {/* Texto */}
     <div className="w-full xl:w-1/2 flex flex-col justify-between items-center xl:items-start gap-6 xl:gap-8">
       {aboutItems.map((item) => (
     <h5
@@ -65,28 +59,6 @@ export default function WhoWeArePage() {
   </div>
 </section>
 
-            
-{/* 
-            <section>
-                <div id="nossos-valores" className="cs-x-container flex justify-start lg:justify-center my-12 scroll-mt-24">
-                    <h1 className="text-green">{t('WhoWeArePage.section2.title')}</h1>
-                </div>
-
-                <div className="bg-light-pink cs-x-container cs-y-container flex flex-col gap-12">
-                    {valuesItems.map((item) => (
-                        <div key={item.id} className="flex items-start gap-6 max-w-6xl">
-                            <RoundedIcon src={item.iconSrc} alt="" />
-                            <div className="flex flex-col gap-6">
-                                <h2 className="text-3xl font-bold text-purple">{t(item.titleKey)}</h2>
-                                <h5 className="text-gray">
-                                    {t(item.descriptionKey)}
-                                </h5>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
-             */}
         </MainLayout>
     );
 }

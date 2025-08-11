@@ -11,8 +11,7 @@ const HelpSection = () => {
       className="cs-x-container relative grid grid-cols-1 xl:grid-cols-2 gap-8 xl:gap-16 items-stretch xl:min-h-[400px]"
     >
       
-      {/* Fundo rosa absoluto */}
-      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 -z-10">
         <img
           src="/assets/img/all/light-pink-background.png"
           alt="pink background"
