@@ -74,12 +74,22 @@ export default function ProjectsPage() {
     />
   </div>
 
-  <div className="hidden xl:flex flex-col w-full h-64 xl:min-h-[400px] items-left justify-start relative">
+  <div className="hidden xl:flex flex-col w-full h-64 xl:min-h-[400px] items-left justify-start">
     <img
       src={getAssetUrl("/assets/img/all/kids-icons.png")}
       alt="students kids smiling"
-      className="w-full h-full object-contain"
-      style={{ objectPosition: '18% center' }}
+      className="object-contain"
+      style={{
+        objectPosition: '18% center',
+        position: 'absolute',
+        height: '100%',
+        width: '100%',
+        left: 0,
+        top: 0,
+        right: 0,
+        bottom: 0,
+        color: 'transparent'
+      }}
     />
   </div>
 

@@ -28,7 +28,17 @@ export default function ContributePage() {
               <img
                 alt="Bantaja community child"
                 src={getAssetUrl("/assets/img/all/donate_img.png")}
-                className="object-cover w-full h-full"
+                className="object-cover"
+                style={{
+                  position: 'absolute',
+                  height: '100%',
+                  width: '100%',
+                  left: 0,
+                  top: 0,
+                  right: 0,
+                  bottom: 0,
+                  color: 'transparent'
+                }}
               />
             </div>
             <div className="md:w-1/2 p-8">

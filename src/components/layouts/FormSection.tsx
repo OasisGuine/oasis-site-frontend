@@ -93,7 +93,21 @@ const FormSection = () => {
                     {success && <p className='text-green-600'>{success}</p>}
                 </div>
                 <div className='hidden xl:block p-16 relative min-w-[50%] h-auto'>
-                    <img src={getAssetUrl('/assets/img/all/Group 1.png')} alt='Boys smiling to teacher' className='w-full h-full object-contain rounded-lg' />
+                    <img 
+                        src={getAssetUrl('/assets/img/all/Group 1.png')} 
+                        alt='Boys smiling to teacher' 
+                        className='object-contain rounded-lg' 
+                        style={{
+                            position: 'absolute',
+                            height: '100%',
+                            width: '100%',
+                            left: 0,
+                            top: 0,
+                            right: 0,
+                            bottom: 0,
+                            color: 'transparent'
+                        }}
+                    />
                 </div>
             </div>
         </section>
