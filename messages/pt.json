@@ -98,7 +98,9 @@
       "action": "ENVIE SUA MENSAGEM",
       "inputName": "Informe seu nome",
       "inputEmail": "Informe seu e-mail",
-      "inputMessage": "Insira sua mensagem para nós!"
+      "inputMessage": "Insira sua mensagem para nós!",
+      "success": "Mensagem enviada com sucesso! Entraremos em contato em breve.",
+      "error": "Falha ao enviar mensagem. Tente novamente."
     },
     "footer": {
       "title": "Acreditamos no poder transformador da educação"

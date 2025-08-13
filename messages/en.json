@@ -97,7 +97,9 @@
       "action": "SEND US YOUR MESSAGE",
       "inputName": "Name",
       "inputEmail": "E-mail",
-      "inputMessage": "Type your message to us"
+      "inputMessage": "Type your message to us",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "error": "Failed to send message. Please try again."
     },
     "footer": {
       "title": "We believe in the transformative power of education"
