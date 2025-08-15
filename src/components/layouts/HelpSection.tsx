@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import Button from "../inputs/Button";
 import { Link } from "react-router-dom";
 import { getAssetUrl } from "@/utils/assets";
+import { processTextWithColorComponents } from "../../utilities/textProcessor";
 
 const HelpSection = () => {
   const { t } = useTranslation();
@@ -51,7 +52,7 @@ const HelpSection = () => {
         <div className="flex flex-col text-gray gap-4 mb-4 lg:mb-4 xl:mb-4">
           <h5>{t("HomePage.helpSection.descriptionP1")}</h5>
 
-          <h5 dangerouslySetInnerHTML={{ __html: t("HomePage.helpSection.descriptionP2") }}></h5>
+          <h5>{processTextWithColorComponents(t("HomePage.helpSection.descriptionP2"))}</h5>
 
           {/* Botão */}
           <div className="flex flex-col items-center lg:flex-row lg:items-center w-full">
