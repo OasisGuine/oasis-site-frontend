@@ -1,4 +1,3 @@
-
 {
   "Common": {
     "navbar": {
@@ -206,8 +205,8 @@
   "ProjectsPage": {
     "section1": {
       "title": "CONHEÇA NOSSO PROJETO",
-      "description": "Nosso primeiro projeto nasce em <strong>Bantandja</strong>, uma pequena vila no extremo leste da Guiné-Bissau, com cerca de 646 habitantes.",
-      "description2": "A realidade da comunidade é marcada por mais de <strong>70% de analfabetismo, renda mensal inferior a 15 dólares, insegurança alimentar e ausência quase total de infraestrutura básica</strong>, como escolas e saúde.",
+      "description": "Nosso primeiro projeto nasce em <purple>Bantandja</purple>, uma pequena vila no extremo leste da Guiné-Bissau, com cerca de 646 habitantes.",
+      "description2": "A realidade da comunidade é marcada por mais de <purple>70% de analfabetismo, renda mensal inferior a 15 dólares, insegurança alimentar e ausência quase total de infraestrutura básica</purple>, como escolas e saúde.",
       "description3": "Para transformar essa realidade, estamos iniciando a <purple>Escola Bom Samaritano</purple>, um espaço que, em sua primeira fase, contará com uma sala de aula para atender 40 crianças, oferecendo educação de qualidade, alimentação diária e um ambiente seguro."
     },
     "section2": {
@@ -275,7 +274,7 @@
     },
     "section4": {
       "title": " Meta 10K: A Sala Que Vai Mudar Tudo",
-      "space":  " ",
+      "space": " ",
       "description1": "<purple>Prestação de contas é parte essencial do nosso compromisso.</purple> Cada recurso será aplicado com responsabilidade e transparência, porque acreditamos que integridade também educa.",
       "description2": "<purple>A sala vai ser construída. As crianças vão estudar. E você pode fazer parte disso! </purple>",
       "description": "Estamos realizando uma campanha de arrecadação com a meta de 10 mil euros para dar os <purple>primeiros passos</purple> concretos na implantação da nossa escola em Bantandja. Esse valor nos permitirá dar os primeiros passos concretos para transformar a realidade de Bantandja, garantindo:",
@@ -298,10 +297,10 @@
         "6": {
           "description": "Escavação de poço para acesso à <bold>água potável</bold>"
         },
-         "7": {
+        "7": {
           "description": "Portão de <bold>segurança</bold> para proteção dos alunos"
         },
-          "8": {
+        "8": {
           "description": "Contratação de um <bold>professor</bold> e equipe de apoio local"
         },
         "9": {
@@ -364,7 +363,7 @@
     "deviceDefTitle": "- Dados de navegação (cookies e IP)",
     "deviceDefText": "",
     "personalDataDefTitle": "3. Como coletamos os dados",
-    "personalDataDefText": "A coleta pode ocorrer por: ",
+    "personalDataDefText": "A coleta pode ocorrer por:",
     "serviceDefTitle": "- Formulários online",
     "serviceDefText": "(cadastro, contato, doações)",
     "serviceProviderDefTitle": "- Inscrição em eventos",
@@ -376,8 +375,8 @@
     "youDefTitle": "4. Finalidades da coleta",
     "youDefText": "Utilizamos os dados para:",
     "collectingDataTitle": "Processar doações e emitir recibos.",
-    "typesOfDataTitle": "Enviar newsletters e comunicações institucionais ",
-    "personalDataTitle": "Gerir eventos e campanhas sociais ",
+    "typesOfDataTitle": "Enviar newsletters e comunicações institucionais",
+    "personalDataTitle": "Gerir eventos e campanhas sociais",
     "personalDataText": "Cumprir obrigações legais",
     "personalDataEmail": "Melhorar a navegação no nosso site",
     "personalDataUsage": "5. Compartilhamento de dados",
@@ -399,9 +398,6 @@
     "trackingBeaconsText7": "Para exercer seus direitos, entre em contato:",
     "trackingBeaconsText8": "info@oasisguine.org.",
 
-
-    
-    
     "cookiesTypesText": "POLÍTICA DE COOKIES",
     "cookiesNecessaryTitle": "Este site utiliza cookies para melhorar sua experiência e garantir o funcionamento adequado das funcionalidades.",
     "cookiesNecessaryType": "O que são cookies?",
@@ -409,18 +405,17 @@
     "cookiesNecessaryPurpose": "Eles ajudam a armazenar preferências e a coletar informações para fins analíticos.",
     "cookiesAcceptanceTitle": "Tipos de cookies usados:",
     "cookiesAcceptanceType": "- Essenciais: Necessários para funcionamento do site.",
-    "cookiesAcceptanceAdmin": "- Analíticos: Coletam dados para estatísticas de acesso (ex: Google Analytics). ",
-    "cookiesAcceptancePurpose": "- Funcionais: Guardam preferências de idioma ou sessões. ",
+    "cookiesAcceptanceAdmin": "- Analíticos: Coletam dados para estatísticas de acesso (ex: Google Analytics).",
+    "cookiesAcceptancePurpose": "- Funcionais: Guardam preferências de idioma ou sessões.",
     "cookiesAcceptancePurpose2": "- De terceiros: Utilizados por serviços integrados como vídeos, redes sociais ou sistemas de doação.",
 
     "cookiesFunctionalityTitle": "Como controlar os cookies?",
     "cookiesFunctionalityType": "Você pode configurar seu navegador para recusar cookies.",
     "cookiesFunctionalityAdmin": "No entanto, algumas funcionalidades podem deixar de funcionar corretamente.",
-     "contactText": "Se você tiver alguma dúvida sobre esta Política de Privacidade e Política de Cookie, você pode nos contatar:",
+    "contactText": "Se você tiver alguma dúvida sobre esta Política de Privacidade e Política de Cookie, você pode nos contatar:",
     "contactEmail": "Por e-mail: info@oasisguine.org",
     "contactWebsite": "Visitando esta página em nosso site:",
 
-    
     "cookiesFunctionalityPurpose": "Finalidade: Esses Cookies nos permitem lembrar as escolhas que Você faz quando usa o Site, como lembrar seus detalhes de login ou preferência de idioma. O objetivo desses Cookies é fornecer a Você uma experiência mais pessoal e evitar que Você tenha que reinserir suas preferências cada vez que usar o Site.",
     "cookiesMoreInfo": "Para mais informações sobre os cookies que usamos e suas escolhas em relação aos cookies, visite nossa Política de Cookies ou a seção Cookies de nossa Política de Privacidade.",
     "useOfDataTitle": "Uso de Seus Dados Pessoais",
@@ -476,6 +471,5 @@
     "changesText2": "Informaremos Você por e-mail e/ou por um aviso destacado em Nosso Serviço, antes que a alteração se torne efetiva e atualizaremos a data de 'Última atualização' no topo desta Política de Privacidade.",
     "changesText3": "Você é aconselhado a revisar esta Política de Privacidade periodicamente para quaisquer alterações. As alterações a esta Política de Privacidade são efetivas quando são publicadas nesta página.",
     "contactTitle": "Entre em Contato Conosco"
-   
   }
 }

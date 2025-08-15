@@ -31,6 +31,9 @@ function App() {
           })
         }
       }, 100)
+    } else {
+      // Scroll to top when navigating to a page without anchor
+      window.scrollTo(0, 0)
     }
   }, [location])
 
