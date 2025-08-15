@@ -150,6 +150,13 @@
     "donorPage": {
       "text": "Already a donor? You can access the donor portal here:",
       "action": "DONOR PORTAL"
+    },
+    "donorPortalModal": {
+      "title": "Donor Portal",
+      "description": "To access our donor portal, please indicate below the currency in which you make your monthly donation.",
+      "currencyLabel": "Select currency:",
+      "confirmButton": "CONFIRM",
+      "imageAlt": "Child smiling and waving"
     }
   },
   "ContributeSuccessPage": {

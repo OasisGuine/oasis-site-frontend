@@ -150,6 +150,13 @@
     "donorPage": {
       "text": "Já é um doador? Acesse o portal do doador aqui:",
       "action": "PORTAL DO DOADOR"
+    },
+    "donorPortalModal": {
+      "title": "Portal do Doador",
+      "description": "Para acessar o nosso portal do doador, por favor, informe abaixo a moeda em que você realiza sua doação mensal.",
+      "currencyLabel": "Selecione a moeda:",
+      "confirmButton": "CONFIRMAR",
+      "imageAlt": "Criança sorrindo e acenando"
     }
   },
   "ContributeSuccessPage": {
