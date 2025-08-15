@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { 
   Elements, 
@@ -36,13 +36,41 @@ function DonationForm() {
     period: string;
   }
   
-  const donationOptions: DonationOption[] = [
-   { value: '12,00', label: '12,00', period: t('ContributePage.formSection.plans.monthly')},
-   { value: '24,00', label: '24,00', period: t('ContributePage.formSection.plans.monthly')},
-   { value: '48,00', label: '48,00', period: t('ContributePage.formSection.plans.monthly')},
-   { value: '96,00', label: '96,00', period: t('ContributePage.formSection.plans.monthly')},
-   { value: 'custom', label: t('ContributePage.formSection.plans.oneTime'), period: t('ContributePage.formSection.plans.donation')}
-  ];
+  // Function to get currency symbol
+  const getCurrencySymbol = (currency: string): string => {
+    switch (currency) {
+      case 'brl': return 'R$';
+      case 'usd': return '$';
+      case 'eur': return '€';
+      default: return '€';
+    }
+  };
+
+  // Function to get donation options based on currency
+  const getDonationOptions = (currency: string): DonationOption[] => {
+    const symbol = getCurrencySymbol(currency);
+    
+    if (currency === 'brl') {
+      return [
+        { value: '40,00', label: `${symbol}40,00`, period: t('ContributePage.formSection.plans.monthly')},
+        { value: '80,00', label: `${symbol}80,00`, period: t('ContributePage.formSection.plans.monthly')},
+        { value: '120,00', label: `${symbol}120,00`, period: t('ContributePage.formSection.plans.monthly')},
+        { value: '160,00', label: `${symbol}160,00`, period: t('ContributePage.formSection.plans.monthly')},
+        { value: 'custom', label: t('ContributePage.formSection.plans.oneTime'), period: t('ContributePage.formSection.plans.donation')}
+      ];
+    }
+    
+    // Default EUR/USD values
+    return [
+      { value: '12,00', label: `${symbol}12,00`, period: t('ContributePage.formSection.plans.monthly')},
+      { value: '24,00', label: `${symbol}24,00`, period: t('ContributePage.formSection.plans.monthly')},
+      { value: '48,00', label: `${symbol}48,00`, period: t('ContributePage.formSection.plans.monthly')},
+      { value: '96,00', label: `${symbol}96,00`, period: t('ContributePage.formSection.plans.monthly')},
+      { value: 'custom', label: t('ContributePage.formSection.plans.oneTime'), period: t('ContributePage.formSection.plans.donation')}
+    ];
+  };
+  
+  const donationOptions = getDonationOptions(currency);
   
   interface SelectedPlan {
     name: string;
@@ -54,15 +82,35 @@ function DonationForm() {
     price: parseFloat(donationOptions[1].value.replace(',', '.'))
   });
 
+  // Effect to handle currency change and reset values
+  useEffect(() => {
+    const newDonationOptions = getDonationOptions(currency);
+    
+    // Reset to default selection when currency changes
+    setSelectedAmount(newDonationOptions[1].value);
+    setIsCustomAmount(false);
+    setSelectedPlan({
+      name: `${newDonationOptions[1].label} ${newDonationOptions[1].period}`,
+      price: parseFloat(newDonationOptions[1].value.replace(',', '.'))
+    });
+    
+    // Reset custom amount if it was selected
+    if (isCustomAmount) {
+      setCustomAmount(currency === 'brl' ? '80,00' : '50,00');
+    }
+  }, [currency]);
+
   const handleAmountSelect = (amount: string) => {
+    const currentOptions = getDonationOptions(currency);
+    
     if (amount === 'custom') {
       setIsCustomAmount(true);
       setSelectedAmount('custom');
-      setCustomAmount('50,00');
+      setCustomAmount(currency === 'brl' ? '80,00' : '50,00');
     } else {
       setIsCustomAmount(false);
       setSelectedAmount(amount);
-      const selectedOption = donationOptions.find(opt => opt.value === amount);
+      const selectedOption = currentOptions.find(opt => opt.value === amount);
       if (selectedOption) {
         setSelectedPlan({
           name: `${selectedOption.label} ${selectedOption.period}`,
@@ -242,7 +290,7 @@ function DonationForm() {
   return (      
     <form onSubmit={handleSubmit} className="w-full bg-white">        
       <div className="grid grid-cols-3 md:grid-cols-5 gap-2 mb-6">
-        {donationOptions.map((option) => (
+        {getDonationOptions(currency).map((option) => (
           <div 
             key={option.value}
             className={`cursor-pointer border rounded-md p-2 text-center hover:bg-[#65509F] hover:text-white shadow-lg py-5 ${

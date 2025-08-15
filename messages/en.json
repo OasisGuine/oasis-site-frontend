@@ -127,7 +127,7 @@
       },
       "plans": {
         "monthly": "monthly",
-        "oneTime": "One-time",
+        "oneTime": "Single",
         "donation": "donation"
       },
       "success": {
