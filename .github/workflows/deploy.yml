@@ -30,9 +30,12 @@ jobs:
 
       - name: Create environment file
         run: |
-          echo "VITE_STRIPE_PUBLISHABLE_KEY=${{ secrets.VITE_STRIPE_PUBLISHABLE_KEY }}" >> .env
+          echo "VITE_STRIPE_PUBLISHABLE_KEY_BR=${{ secrets.VITE_STRIPE_PUBLISHABLE_KEY_BR }}" >> .env
+          echo "VITE_STRIPE_PUBLISHABLE_KEY_EU=${{ secrets.VITE_STRIPE_PUBLISHABLE_KEY_EU }}" >> .env
+
           echo "VITE_API_URL=${{ secrets.VITE_API_URL }}" >> .env
-          echo "VITE_DONOR_PORTAL_URL=${{ secrets.VITE_DONOR_PORTAL_URL }}" >> .env
+          echo "VITE_DONOR_PORTAL_URL_BR=${{ secrets.VITE_DONOR_PORTAL_URL_BR }}" >> .env
+          echo "VITE_DONOR_PORTAL_URL_EU=${{ secrets.VITE_DONOR_PORTAL_URL_EU }}" >> .env
           echo "VITE_BASE_PATH=${{ secrets.VITE_BASE_PATH }}" >> .env
           echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
 
@@ -47,7 +50,7 @@ jobs:
 
       - name: Build project
         run: npm run build
-        
+
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Actions"
