@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { EmailIcon, FacebookIcon, InstagramIcon } from "../ui/icons";
 import Button from "../inputs/Button";
 
-const DONOR_PORTAL_URL = import.meta.env.VITE_DONOR_PORTAL_URL || ""
+import { getDonorPortalUrl } from "@/lib/donorPortal";
 
 interface DrawerSidebarProps {
   open?: boolean;
@@ -131,35 +131,38 @@ export function DrawerContent({
       {/* Navigation Links */}
       <nav>
         <ul className="flex flex-col">
-{[
-  { id: 1, title: "Common.navbar.home", link: "/" },
-  { id: 3, title: "Common.navbar.item2", link: "/who-we-are" },
-  { id: 2, title: "Common.navbar.item1", link: "/projects" },
-  { id: 5, title: "Common.navbar.item4", link: "/#contact" },
-  { id: 6, title: "Common.navbar.item5", link: DONOR_PORTAL_URL },
-].map((item) => (
-  <li key={item.id} className="border-b border-dashed border-gray-200">
-    {item.link.startsWith("http") ? (
-      <a
-        href={item.link}
-        className="block py-4 text-lg text-purple hover:text-green transition-colors duration-500"
-        onClick={onLinkClick}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {t(item.title)}
-      </a>
-    ) : (
-      <Link
-        to={item.link}
-        className="block py-4 text-lg text-purple hover:text-green transition-colors duration-500"
-        onClick={onLinkClick}
-      >
-        {t(item.title)}
-      </Link>
-    )}
-  </li>
-))}
+          {[
+            { id: 1, title: "Common.navbar.home", link: "/" },
+            { id: 3, title: "Common.navbar.item2", link: "/who-we-are" },
+            { id: 2, title: "Common.navbar.item1", link: "/projects" },
+            { id: 5, title: "Common.navbar.item4", link: "/#contact" },
+            { id: 6, title: "Common.navbar.item5", link: getDonorPortalUrl() },
+          ].map((item) => (
+            <li
+              key={item.id}
+              className="border-b border-dashed border-gray-200"
+            >
+              {item.link.startsWith("http") ? (
+                <a
+                  href={item.link}
+                  className="block py-4 text-lg text-purple hover:text-green transition-colors duration-500"
+                  onClick={onLinkClick}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t(item.title)}
+                </a>
+              ) : (
+                <Link
+                  to={item.link}
+                  className="block py-4 text-lg text-purple hover:text-green transition-colors duration-500"
+                  onClick={onLinkClick}
+                >
+                  {t(item.title)}
+                </Link>
+              )}
+            </li>
+          ))}
         </ul>
       </nav>
 
@@ -193,13 +196,25 @@ export function DrawerContent({
 
         {/* Social Media Links */}
         <div className="flex items-center gap-8">
-          <a href="https://www.instagram.com/umoasisnaguine" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/umoasisnaguine"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <InstagramIcon />
           </a>
-          <a href="https://www.facebook.com/share/16upePmZZ8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com/share/16upePmZZ8/?mibextid=wwXIfr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FacebookIcon />
           </a>
-          <a href="mailto:info@oasisguine.org" target="_blank" rel="noopener noreferrer">
+          <a
+            href="mailto:info@oasisguine.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <EmailIcon />
           </a>
         </div>
@@ -207,4 +222,3 @@ export function DrawerContent({
     </div>
   );
 }
-

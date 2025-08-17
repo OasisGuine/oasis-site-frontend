@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { loadStripe } from '@stripe/stripe-js';
 import { 
   Elements, 
   CardElement, 
@@ -10,8 +9,7 @@ import type { StripeCardElement } from '@stripe/stripe-js';
 import { useTranslation } from "react-i18next";
 import Button from "../inputs/Button";
 import { stripeApi, ApiError } from '../../lib/api';
-
-const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY || "");
+import { getStripe } from '../../lib/stripe';
 
 // Price IDs are no longer needed - we use dynamic pricing with amount + currency
 
@@ -29,6 +27,7 @@ function DonationForm() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
   const [currency, setCurrency] = useState('eur');
+  const [stripeInstance, setStripeInstance] = useState(stripe);
   
   interface DonationOption {
     value: string;
@@ -98,7 +97,15 @@ function DonationForm() {
     if (isCustomAmount) {
       setCustomAmount(currency === 'brl' ? '80,00' : '50,00');
     }
-  }, [currency]);
+    
+    // Load appropriate Stripe instance for the currency
+    const loadStripeForCurrency = async () => {
+      const newStripeInstance = await getStripe(currency);
+      setStripeInstance(newStripeInstance);
+    };
+    
+    loadStripeForCurrency();
+  }, [currency, isCustomAmount]);
 
   const handleAmountSelect = (amount: string) => {
     const currentOptions = getDonationOptions(currency);
@@ -128,7 +135,7 @@ function DonationForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
-    if (!stripe || !elements) {
+    if (!stripeInstance || !elements) {
       setError(t('ContributePage.formSection.errors.loading'));
       return;
     }
@@ -168,7 +175,7 @@ function DonationForm() {
   };
   
   const handleSubscriptionPayment = async (cardElement: StripeCardElement) => {
-    if (!stripe || !elements) {
+    if (!stripeInstance || !elements) {
       setError(t('ContributePage.formSection.errors.loading'));
       return;
     }
@@ -177,9 +184,10 @@ function DonationForm() {
       const setupData = await stripeApi.setupIntent({
         customer_name: fullName,
         customer_email: email,
+        currency: currency,
       });
       
-      const { error: setupError, setupIntent } = await stripe.confirmCardSetup(
+      const { error: setupError, setupIntent } = await stripeInstance.confirmCardSetup(
         setupData.clientSecret,
         {
           payment_method: {
@@ -221,7 +229,7 @@ function DonationForm() {
   };
   
   const handleOneTimePayment = async (cardElement: StripeCardElement) => {
-    if (!stripe || !elements) {
+    if (!stripeInstance || !elements) {
       setError(t('ContributePage.formSection.errors.loading'));
       return;
     }
@@ -240,7 +248,7 @@ function DonationForm() {
         currency: currency.toLowerCase() // Ensure lowercase for Stripe API
       });
       
-      const { error: paymentError } = await stripe.confirmCardPayment(
+      const { error: paymentError } = await stripeInstance.confirmCardPayment(
         paymentData.clientSecret,
         {
           payment_method: {
@@ -425,7 +433,7 @@ function DonationForm() {
       <div className="flex justify-center xl:justify-start">
         <Button
           type="submit"
-          disabled={loading || !stripe || !elements}
+          disabled={loading || !stripeInstance || !elements}
         >
           {loading ? t('ContributePage.formSection.submitting') : t('ContributePage.formSection.submit')}
         </Button>
@@ -436,8 +444,23 @@ function DonationForm() {
 }
 
 export default function DonationFormWrapper() {
+  const [stripeInstance, setStripeInstance] = useState<any>(null);
+
+  useEffect(() => {
+    const loadInitialStripe = async () => {
+      const stripe = await getStripe('eur');
+      setStripeInstance(stripe);
+    };
+    
+    loadInitialStripe();
+  }, []);
+
+  if (!stripeInstance) {
+    return <div>Loading payment form...</div>;
+  }
+
   return (
-    <Elements stripe={stripePromise}>
+    <Elements stripe={stripeInstance}>
       <DonationForm />
     </Elements>
   );

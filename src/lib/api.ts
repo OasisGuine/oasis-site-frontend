@@ -60,6 +60,11 @@ async function apiRequest<T = any>(
   }
 }
 
+// Determine which Stripe account to use based on currency
+const getStripeAccount = (currency: string): 'br' | 'eu' => {
+  return currency.toLowerCase() === 'brl' ? 'br' : 'eu';
+};
+
 // Stripe API functions
 export const stripeApi = {
   // Create payment intent for one-time payments
@@ -67,9 +72,13 @@ export const stripeApi = {
     amount: number;
     currency: string;
   }) => {
+    const stripeAccount = getStripeAccount(data.currency);
     return apiRequest<{ clientSecret: string }>('/api/create-payment', {
       method: 'POST',
-      body: JSON.stringify(data),
+      body: JSON.stringify({
+        ...data,
+        stripeAccount
+      }),
     });
   },
 
@@ -77,14 +86,19 @@ export const stripeApi = {
   setupIntent: async (data: {
     customer_email: string;
     customer_name: string;
+    currency?: string;
   }) => {
+    const stripeAccount = data.currency ? getStripeAccount(data.currency) : 'eu';
     return apiRequest<{
       clientSecret: string;
       setupIntentId: string;
       customerId: string;
     }>('/api/setup-intent', {
       method: 'POST',
-      body: JSON.stringify(data),
+      body: JSON.stringify({
+        ...data,
+        stripeAccount
+      }),
     });
   },
 
@@ -97,13 +111,17 @@ export const stripeApi = {
     currency?: string; // Currency code (e.g., 'usd', 'eur')
     interval?: string; // Interval (default: 'month')
   }) => {
+    const stripeAccount = data.currency ? getStripeAccount(data.currency) : 'eu';
     return apiRequest<{
       subscriptionId: string;
       status: string;
       clientSecret: string | null;
     }>('/api/create-subscription', {
       method: 'POST',
-      body: JSON.stringify(data),
+      body: JSON.stringify({
+        ...data,
+        stripeAccount
+      }),
     });
   },
 };

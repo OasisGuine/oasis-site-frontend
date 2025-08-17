@@ -7,7 +7,7 @@ import { RoundedIcon } from "@/components/ui/icons";
 import { getAssetUrl } from "@/utils/assets";
 import Dialog from "@/components/ui/Dialog";
 
-const DONOR_PORTAL_URL = import.meta.env.VITE_DONOR_PORTAL_URL || "";
+import { getDonorPortalUrl } from "@/lib/donorPortal";
 
 export default function ContributePage() {
   const { t } = useTranslation();
@@ -20,8 +20,8 @@ export default function ContributePage() {
   };
 
   const handleCurrencyConfirm = () => {
-    // Construct the donor portal URL with currency parameter
-    const url = `${DONOR_PORTAL_URL}?currency=${selectedCurrency}`;
+    // Get the appropriate donor portal URL based on currency
+    const url = getDonorPortalUrl(selectedCurrency);
     window.open(url, "_blank");
     setIsModalOpen(false);
   };
