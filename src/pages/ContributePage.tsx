@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "@/components/inputs/Button";
 import MainLayout from "@/components/layouts/MainLayout";
@@ -12,7 +12,13 @@ import { getDonorPortalUrl } from "@/lib/donorPortal";
 export default function ContributePage() {
   const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedCurrency, setSelectedCurrency] = useState("eur");
+  // Load currency from localStorage or default to "eur"
+  const [selectedCurrency, setSelectedCurrency] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("oasis-selected-currency") || "eur";
+    }
+    return "eur";
+  });
 
   const handleDonorPortalClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -25,6 +31,13 @@ export default function ContributePage() {
     window.open(url, "_blank");
     setIsModalOpen(false);
   };
+
+  // Save currency to localStorage when it changes
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("oasis-selected-currency", selectedCurrency);
+    }
+  }, [selectedCurrency]);
 
   return (
     <MainLayout
