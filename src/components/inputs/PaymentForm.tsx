@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next";
 import Button from "../inputs/Button";
 import { stripeApi, ApiError } from "../../lib/api";
 import { getStripe } from "../../lib/stripe";
+import { getInitialCurrency } from "../../utils/currencyDetection";
 
 // Price IDs are no longer needed - we use dynamic pricing with amount + currency
 
@@ -30,12 +31,9 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
-  // Load currency from localStorage or default to "eur"
+  // Load currency with timezone detection on first visit
   const [currency, setCurrency] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("oasis-selected-currency") || "eur";
-    }
-    return "eur";
+    return getInitialCurrency();
   });
 
   interface DonationOption {
@@ -531,12 +529,9 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
 }
 
 export default function DonationFormWrapper() {
-  // Load currency from localStorage or default to "eur"
+  // Load currency with timezone detection on first visit
   const [currency, setCurrency] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("oasis-selected-currency") || "eur";
-    }
-    return "eur";
+    return getInitialCurrency();
   });
   const [stripe, setStripeInstance] = useState<any>(null);
 

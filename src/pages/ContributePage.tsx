@@ -8,16 +8,14 @@ import { getAssetUrl } from "@/utils/assets";
 import Dialog from "@/components/ui/Dialog";
 
 import { getDonorPortalUrl } from "@/lib/donorPortal";
+import { getInitialCurrency } from "@/utils/currencyDetection";
 
 export default function ContributePage() {
   const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  // Load currency from localStorage or default to "eur"
+  // Load currency with timezone detection on first visit
   const [selectedCurrency, setSelectedCurrency] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("oasis-selected-currency") || "eur";
-    }
-    return "eur";
+    return getInitialCurrency();
   });
 
   const handleDonorPortalClick = (e: React.MouseEvent) => {
