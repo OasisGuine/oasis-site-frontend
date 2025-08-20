@@ -135,6 +135,7 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
   // Effect to handle currency change and reset values
   useEffect(() => {
     const newDonationOptions = getDonationOptions(currency);
+    const currentStoredCurrency = typeof window !== "undefined" ? localStorage.getItem("oasis-selected-currency") : null;
 
     // Reset to default selection when currency changes
     setSelectedAmount(newDonationOptions[1].value);
@@ -147,8 +148,13 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
     // Reset custom amount
     setCustomAmount(currency === "brl" ? "80,00" : "50,00");
 
-    // Save currency to localStorage
+    // Save currency to localStorage and reload if currency changed
     if (typeof window !== "undefined") {
+      if (currentStoredCurrency && currentStoredCurrency !== currency) {
+        localStorage.setItem("oasis-selected-currency", currency);
+        window.location.reload();
+        return;
+      }
       localStorage.setItem("oasis-selected-currency", currency);
     }
 
