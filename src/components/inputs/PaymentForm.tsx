@@ -144,10 +144,8 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
       price: parseFloat(newDonationOptions[1].value.replace(",", ".")),
     });
 
-    // Reset custom amount if it was selected
-    if (isCustomAmount) {
-      setCustomAmount(currency === "brl" ? "80,00" : "50,00");
-    }
+    // Reset custom amount
+    setCustomAmount(currency === "brl" ? "80,00" : "50,00");
 
     // Save currency to localStorage
     if (typeof window !== "undefined") {
@@ -156,7 +154,7 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
 
     // Notify parent component about currency change
     onCurrencyChange(currency);
-  }, [currency, isCustomAmount, onCurrencyChange]);
+  }, [currency, onCurrencyChange]);
 
   const handleAmountSelect = (amount: string) => {
     const currentOptions = getDonationOptions(currency);
@@ -164,7 +162,13 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
     if (amount === "custom") {
       setIsCustomAmount(true);
       setSelectedAmount("custom");
-      setCustomAmount(currency === "brl" ? "80,00" : "50,00");
+      const defaultCustomAmount = currency === "brl" ? "80,00" : "50,00";
+      setCustomAmount(defaultCustomAmount);
+      // Update selected plan for custom amount
+      setSelectedPlan({
+        name: `${currentOptions.find(opt => opt.value === "custom")?.label} ${currentOptions.find(opt => opt.value === "custom")?.period}`,
+        price: parseFloat(defaultCustomAmount.replace(",", ".")),
+      });
     } else {
       setIsCustomAmount(false);
       setSelectedAmount(amount);
@@ -181,6 +185,14 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
   const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/[^0-9,]/g, "");
     setCustomAmount(value);
+    // Update selected plan when custom amount changes
+    if (isCustomAmount && value) {
+      const currentOptions = getDonationOptions(currency);
+      setSelectedPlan({
+        name: `${currentOptions.find(opt => opt.value === "custom")?.label} ${currentOptions.find(opt => opt.value === "custom")?.period}`,
+        price: parseFloat(value.replace(",", ".")),
+      });
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
