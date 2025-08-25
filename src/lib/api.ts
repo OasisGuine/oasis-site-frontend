@@ -71,9 +71,11 @@ export const stripeApi = {
   createPayment: async (data: {
     amount: number;
     currency: string;
+    customer_email?: string;
+    customer_name?: string;
   }) => {
     const stripeAccount = getStripeAccount(data.currency);
-    return apiRequest<{ clientSecret: string }>('/api/create-payment', {
+    return apiRequest<{ clientSecret: string; customerId?: string }>('/api/create-payment', {
       method: 'POST',
       body: JSON.stringify({
         ...data,

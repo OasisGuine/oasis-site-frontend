@@ -319,6 +319,8 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
       const paymentData = await stripeApi.createPayment({
         amount: amountInCents,
         currency: currency.toLowerCase(), // Ensure lowercase for Stripe API
+        customer_email: email,
+        customer_name: fullName,
       });
 
       const { error: paymentError } = await stripe.confirmCardPayment(
