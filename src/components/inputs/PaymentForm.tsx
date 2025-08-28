@@ -135,7 +135,10 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
   // Effect to handle currency change and reset values
   useEffect(() => {
     const newDonationOptions = getDonationOptions(currency);
-    const currentStoredCurrency = typeof window !== "undefined" ? localStorage.getItem("oasis-selected-currency") : null;
+    const currentStoredCurrency =
+      typeof window !== "undefined"
+        ? localStorage.getItem("oasis-selected-currency")
+        : null;
 
     // Reset to default selection when currency changes
     setSelectedAmount(newDonationOptions[1].value);
@@ -160,7 +163,7 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
 
     // Notify parent component about currency change
     onCurrencyChange(currency);
-  }, [currency, onCurrencyChange]);
+  }, [currency, onCurrencyChange, success]);
 
   const handleAmountSelect = (amount: string) => {
     const currentOptions = getDonationOptions(currency);
@@ -172,7 +175,9 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
       setCustomAmount(defaultCustomAmount);
       // Update selected plan for custom amount
       setSelectedPlan({
-        name: `${currentOptions.find(opt => opt.value === "custom")?.label} ${currentOptions.find(opt => opt.value === "custom")?.period}`,
+        name: `${currentOptions.find((opt) => opt.value === "custom")?.label} ${
+          currentOptions.find((opt) => opt.value === "custom")?.period
+        }`,
         price: parseFloat(defaultCustomAmount.replace(",", ".")),
       });
     } else {
@@ -195,7 +200,9 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
     if (isCustomAmount && value) {
       const currentOptions = getDonationOptions(currency);
       setSelectedPlan({
-        name: `${currentOptions.find(opt => opt.value === "custom")?.label} ${currentOptions.find(opt => opt.value === "custom")?.period}`,
+        name: `${currentOptions.find((opt) => opt.value === "custom")?.label} ${
+          currentOptions.find((opt) => opt.value === "custom")?.period
+        }`,
         price: parseFloat(value.replace(",", ".")),
       });
     }
@@ -261,8 +268,9 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
         currency: currency,
       });
 
-      const { error: setupError, setupIntent } =
-        await stripe.confirmCardSetup(setupData.clientSecret, {
+      const { error: setupError, setupIntent } = await stripe.confirmCardSetup(
+        setupData.clientSecret,
+        {
           payment_method: {
             card: cardElement,
             billing_details: {
@@ -270,7 +278,8 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
               email: email,
             },
           },
-        });
+        }
+      );
 
       if (setupError) {
         throw new Error(setupError.message);
@@ -369,14 +378,6 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
               setError("");
               setEmail("");
               setFullName("");
-              setSelectedAmount("24,00");
-              setIsCustomAmount(false);
-              setCustomAmount("");
-              const newDonationOptions = getDonationOptions(currency);
-              setSelectedPlan({
-                name: `${newDonationOptions[1].label} ${newDonationOptions[1].period}`,
-                price: parseFloat(newDonationOptions[1].value.replace(",", ".")),
-              });
             }}
             className="px-12 py-2 bg-[#509f8c] text-white rounded-full font-medium hover:bg-[#65509F] shadow-md cursor-pointer"
           >
@@ -535,10 +536,7 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
       {error && <div className="text-red-500 text-sm mb-4">{error}</div>}
 
       <div className="flex justify-center xl:justify-start">
-        <Button
-          type="submit"
-          disabled={loading || !stripe || !elements}
-        >
+        <Button type="submit" disabled={loading || !stripe || !elements}>
           {loading
             ? t("ContributePage.formSection.submitting")
             : t("ContributePage.formSection.submit")}
