@@ -420,12 +420,12 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
             <option value="eur">
               {t("ContributePage.formSection.currencies.eur")}
             </option>
-            {/* <option value="usd">
+             <option value="usd">
               {t("ContributePage.formSection.currencies.usd")}
             </option>
             <option value="brl">
               {t("ContributePage.formSection.currencies.brl")}
-            </option> */} 
+            </option>
           </select>
           {isCustomAmount ? (
             <input
@@ -456,12 +456,12 @@ function DonationForm({ onCurrencyChange }: DonationFormProps) {
             <option value="eur">
               {t("ContributePage.formSection.currencies.eur")}
             </option>
-            {/*  <option value="usd">
+             <option value="usd">
               {t("ContributePage.formSection.currencies.usd")}
             </option>
             <option value="brl">
               {t("ContributePage.formSection.currencies.brl")}
-            </option> */}
+            </option>
           </select>
         </div>
         <div className="w-12/12 md:w-9/12 px-2">
