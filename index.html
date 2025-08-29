@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://oasisguine.org/favicon.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oásis</title>
     <meta
@@ -14,9 +18,26 @@
       property="og:description"
       content="Building wells, schools, and hope in Guinea-Bissau communities."
     />
-    <meta property="og:image" content="/assets/img/all/meta-oasis-1280.png" />
+    <meta
+      property="og:image"
+      content="https://oasisguine.org/assets/img/all/meta-oasis-1280.png"
+    />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NLMWVXBNKP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NLMWVXBNKP");
+    </script>
     <script type="module" crossorigin src="/assets/index-BSDch_s_.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DTCjcGvf.css">
   </head>
@@ -24,7 +45,7 @@
     <div id="root"></div>
     <script>
       // GitHub Pages SPA redirect handling
-      (function() {
+      (function () {
         var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
         if (redirect && redirect !== location.href) {
