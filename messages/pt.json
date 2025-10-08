@@ -2,14 +2,14 @@
   "Common": {
     "navbar": {
       "home": "HOME",
-      "item1": "NOSSO PROJETO",
+      "item1": "PROJETOS",
       "item2": "QUEM SOMOS",
       "item3": "COMO AJUDAR",
       "item4": "CONTATO",
       "item5": "PORTAL DO DOADOR",
       "action": "DOE AGORA",
       "dropdowns": {
-        "item1": "Nossa escola",
+        "item1": "Parcerias em Ação",
         "item2": "Meta 10k",
         "item3": "Sobre nós",
         "item4": "Nossos valores"
@@ -28,9 +28,9 @@
       "title1": "Nutrindo Esperança,<br/> Cultivando Futuros",
       "subTitle1": "NOSSA MISSÃO É CAPACITAR CRIANÇAS COM EDUCAÇÃO, FÉ E ESPERANÇA PARA UM FUTURO BRILHANTE.",
       "action1": "QUEM SOMOS",
-      "title2": "Conheça nosso projeto",
-      "subTitle2": "ENTENDA EM DETALHES O MOTIVO DE ESCOLHERMOS A GUINÉ-BISSAU PARA CONSTRUIRMOS NOSSA ESCOLA.",
-      "action2": "NOSSO PROJETO",
+      "title2": "Conheça o nosso primeiro projeto parceiro",
+      "subTitle2": "ENTENDA O CORAÇÃO POR TRÁS DA NOSSA ESCOLHA: LEVAR ESPERANÇA E EDUCAÇÃO À GUINÉ-BISSAU COM A ESCOLA BOM SAMARITANO.",
+      "action2": "SAIBA MAIS",
       "title3": "META 10K <br/> A Sala que vai mudar Tudo!",
       "subTitle3": "Estamos levantando €10 mil para abrir <br/> a PRIMEIRA SALA DE AULA na VILA BANTANDJA em GUINÉ-BISSAU. <br/>",
       "action3": "PARTICIPE"
@@ -85,7 +85,7 @@
     },
     "joinSection": {
       "title": "Venha fazer parte",
-      "subTitle": "A sua oração e intercessão em favor do nosso projeto e de toda a equipe da OASIS fará a diferença para que alcancemos os objetivos compartilhados aqui. Contamos com seu tempo de devoção em nosso favor!",
+      "subTitle": "A sua oração e intercessão em favor de nossos projetos parceiros e de toda a equipe da OASIS fará a diferença para que alcancemos os objetivos compartilhados aqui. Contamos com seu tempo de devoção em nosso favor!",
       "action": "NOS ENVIE SUA ORAÇÃO"
     },
     "motivationSection": {
@@ -184,11 +184,11 @@
       },
       "item2": {
         "title": "Oração e intercessão",
-        "description": "Suas orações pelo projeto e por todo nosso time são muito importantes para nós!"
+        "description": "Suas orações por nossos projetos parceiros e por todo time são muito importantes para nós!"
       },
       "item3": {
         "title": "Divulgação",
-        "description": "Compartilhe nosso projeto para conscientizar o máximo de pessoas a fazerem a diferença na vida de uma criança.",
+        "description": "Compartilhe Um Oásis nas Nações para conscientizar o máximo de pessoas a fazerem a diferença na vida de uma criança.",
         "action": "COMPARTILHE"
       }
     },
@@ -211,10 +211,10 @@
   },
   "ProjectsPage": {
     "section1": {
-      "title": "CONHEÇA NOSSO PROJETO",
-      "description": "Nosso primeiro projeto nasce em <purple>Bantandja</purple>, uma pequena vila no extremo leste da Guiné-Bissau, com cerca de 646 habitantes.",
+      "title": "CONHEÇA NOSSO PRIMEIRO PROJETO PARCEIRO",
+      "description": "Nosso primeiro projeto parceiro nasce em <purple>Bantandja</purple>, uma pequena vila no extremo leste da Guiné-Bissau, com cerca de 646 habitantes.",
       "description2": "A realidade da comunidade é marcada por mais de <purple>70% de analfabetismo, renda mensal inferior a 15 dólares, insegurança alimentar e ausência quase total de infraestrutura básica</purple>, como escolas e saúde.",
-      "description3": "Para transformar essa realidade, estamos iniciando a <purple>Escola Bom Samaritano</purple>, um espaço que, em sua primeira fase, contará com uma sala de aula para atender 40 crianças, oferecendo educação de qualidade, alimentação diária e um ambiente seguro."
+      "description3": "Para transformar essa realidade, iniciamos uma parceria com a <purple>Escola Bom Samaritano</purple>, um espaço que, em sua primeira fase, contará com uma sala de aula para atender 40 crianças, oferecendo educação de qualidade, alimentação diária e um ambiente seguro."
     },
     "section2": {
       "title": "ETAPAS DA ESCOLA BOM SAMARITANO",
@@ -321,7 +321,7 @@
       "title": "SOBRE NÓS",
       "item1": {
         "title": "Quem Somos",
-        "description": "A <purple>Oasis</purple> é uma organização sem fins lucrativos guiada por princípios cristãos, comprometida em transformar comunidades por meio da educação acessível e do desenvolvimento sustentável."
+        "description": "<purple>Um Oásis nas Nações</purple> é uma organização sem fins lucrativos guiada por princípios cristãos, comprometida em transformar comunidades por meio da educação acessível e do desenvolvimento sustentável."
       },
       "item2": {
         "title": "Nossa Visão",
