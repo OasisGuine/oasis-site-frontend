@@ -195,10 +195,10 @@ export default function PrivacyPolicyPage() {
             <li>
               {t("PrivacyPolicy.contactWebsite")}{" "}
               <a
-                href="https://www.oasisguine.org/"
+                href="https://www.oasisnacoes.org/"
                 className="text-blue-600 hover:underline"
               >
-                oasisguine.org
+                oasisnacoes.org
               </a>
             </li>
           </ul>
