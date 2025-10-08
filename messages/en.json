@@ -2,14 +2,14 @@
   "Common": {
     "navbar": {
       "home": "HOME",
-      "item1": "OUR PROJECT",
+      "item1": "PROJECTS",
       "item2": "WHO WE ARE",
       "item3": "GET INVOLVED",
       "item4": "GET IN TOUCH",
       "item5": "DONOR PORTAL",
       "action": "DONATE",
       "dropdowns": {
-        "item1": "Our School",
+        "item1": "Partners in Action",
         "item2": "10K Goal",
         "item3": "About Us",
         "item4": "Our Values"
@@ -28,8 +28,8 @@
       "title1": "Nurturing hope,<br/> cultivating futures",
       "subTitle1": "Our mission is to empower children with education, faith, and hope for a bright future.",
       "action1": "LEARN MORE",
-      "title2": "Get to know our project",
-      "subTitle2": "Get to know why we chose Guinea-Bissau to<br/> build our school.",
+      "title2": "Meet our first partner project",
+      "subTitle2": "UNDERSTAND THE HEART BEHIND OUR CHOICE: BRINGING HOPE AND EDUCATION TO GUINEA-BISSAU WITH THE BOM SAMARITANO SCHOOL."
       "action2": "KNOW MORE",
       "title3": "10K GOAL <br/> The Classroom That Will Change Everything!",
       "subTitle3": "We’re raising €10,000 to build the <br/> FIRST CLASSROOM in Bantandja, Guinea-Bissau.<br/>",
@@ -85,7 +85,7 @@
     },
     "joinSection": {
       "title": "Come be a part",
-      "subTitle": "Your prayer and intercession for our project and the entire Oasis team will make a difference in achieving the goals shared here. We count on your devotion time on our behalf!",
+      "subTitle": ""Your prayers for our partner projects and for the entire team are very important to us."",
       "action": "SEND US YOUR PRAYER"
     },
     "motivationSection": {
@@ -184,11 +184,11 @@
       },
       "item2": {
         "title": "Prayer and Intercession",
-        "description": "Your prayers for the project and our entire team are very important to us!"
+        "description": "Your prayers for our partner projects and for the entire team are very important to us!"
       },
       "item3": {
         "title": "Spread out",
-        "description": "Share our project to raise awareness and help more people make a difference in a child's life.",
+        "description": "Share An Oasis Among the Nations to raise awareness and inspire as many people as possible to make a difference in a child's life.",
         "action": "SHARE"
       }
     },
@@ -211,8 +211,8 @@
   },
   "ProjectsPage": {
     "section1": {
-      "title": "GET TO KNOW OUR PROJECT",
-      "description": "Our first project is taking root in <purple>Bantandja</purple>, a small village in the far east of Guinea-Bissau, with approximately 646 inhabitants.",
+    "title": "MEET OUR FIRST PARTNER PROJECT",
+      "description": "Our first partner project begins in <purple>Bantandja</purple>, a small village in the far east of Guinea-Bissau, with around 646 inhabitants."
       "description2": "The community faces a harsh reality: <purple>over 70% illiteracy</purple>, monthly <purple>incomes below $15</purple>, <purple>food insecurity, and an almost complete lack of basic infrastructure</purple> such as schools and healthcare.",
       "description3": "To transform this reality, we are launching the <purple>Good Samaritan School</purple> — a space that, in its first phase, will include a <purple>classroom for 40 children</purple>, offering quality education, daily meals, and a safe environment."
     },
@@ -282,7 +282,7 @@
     "section4": {
       "title": "10K Goal: The Classroom that will Change Everything",
       "space": " ",
-      "description": "We are running a fundraising campaign with a goal of €10,000 to take the <purple>first concrete steps</purple> in establishing our school in Bantandja. This amount will allow us to begin transforming the reality of Bantandja by ensuring:",
+      "description": "We are running a fundraising campaign with a goal of €10,000 to take the <purple>first concrete steps</purple> in establishing a school in Bantandja. This amount will allow us to begin transforming the reality of Bantandja by ensuring:",
       "description1": "<purple>Accountability is a key part of our commitment.</purple> Every resource will be used with responsibility and transparency, because we believe integrity also teaches.",
       "description2": "<purple>The classroom will be built. The children will learn. And you can be part of it!</purple>",
       "stats": {
