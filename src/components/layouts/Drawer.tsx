@@ -197,7 +197,7 @@ export function DrawerContent({
         {/* Social Media Links */}
         <div className="flex items-center gap-8">
           <a
-            href="https://www.instagram.com/umoasisnaguine"
+            href="https://www.instagram.com/umoasisnasnacoes"
             target="_blank"
             rel="noopener noreferrer"
           >
