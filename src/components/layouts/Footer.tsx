@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="flex flex-col gap-2">
           <p>{t("Common.footer.itemRight1")}</p>
           <div className="flex gap-2 h-[30px]">
-            <a href="https://www.instagram.com/umoasisnaguine?igsh=NW1zdWZseGM4cmZ5" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/umoasisnasnacoes?igsh=NW1zdWZseGM4cmZ5" target="_blank" rel="noopener noreferrer">
               <img
                 src={getAssetUrl("/assets/img/icon/instagram.svg")}
                 alt="Instagram icon in white."
