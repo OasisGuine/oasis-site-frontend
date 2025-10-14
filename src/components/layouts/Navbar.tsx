@@ -81,8 +81,8 @@ const Navbar = () => {
           <img
             src={getAssetUrl(`/assets/img/logo/${
               scrolled
-                ? "logo.png"
-                : "white-logo-with-description.png"
+                 ? "black-logo-no-description.png"
+                : "white-logo-no-description.png"
             }`)}
             alt="Oasis logo."
             className="h-[2.81rem] w-auto object-contain transition duration-200 ease-in-out"
