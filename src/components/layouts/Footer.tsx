@@ -19,7 +19,7 @@ const Footer = () => {
 
       {/* CENTER */}
       <img
-        src={getAssetUrl("/assets/img/logo/white-logo-no-description.png")}
+        src={getAssetUrl("/assets/img/logo/white-logo-with-description.png")}
         alt="Oasis logo in white."
         className="h-full w-full object-contain max-h-[50px] max-[915px]:max-h-[40px] md:max-h-[50px] flex-1 max-md:order-1 max-md:w-auto"
       />
