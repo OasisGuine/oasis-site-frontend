@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="flex flex-col gap-2 max-md:text-center">
           <p className="">{t("Common.footer.itemRight2")}</p>
           <span className="font-bold">
-              info@oasisguine.org
+              info@oasisnacoes.org
           </span>
         </div>
       </div>
