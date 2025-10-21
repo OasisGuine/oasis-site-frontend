@@ -211,7 +211,7 @@ export function DrawerContent({
             <FacebookIcon />
           </a>
           <a
-            href="mailto:info@oasisguine.org"
+            href="mailto:info@oasisnacoes.org"
             target="_blank"
             rel="noopener noreferrer"
           >
