@@ -22,7 +22,7 @@ const HeroSection: React.FC<Props> = (props) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-        }, 12000);
+        }, 8000);
         return () => clearInterval(interval);
     }, [currentIndex]);
 
