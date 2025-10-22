@@ -16,7 +16,7 @@ export default function HomePage() {
           subTitleTranslationKey: 'HomePage.heroSection.subTitle1',
           actionTranslationKey: 'HomePage.heroSection.action1',
           actionLink: '/who-we-are',
-          imageSrc: getAssetUrl('/assets/img/all/boy-smile.png')
+          imageSrc: getAssetUrl('/assets/img/all/33.png')
         },
         {
           id: 2,
