@@ -108,7 +108,7 @@ export default function ContributePage() {
                 </div>
 
                 <div className="flex items-center gap-2 font-bold text-purple">
-                  ASSOCIAÇÃO SEMENTE ESCLARECIDA
+                  SEMENTESCLARECIDA ASSOCIACAO
                 </div>
               </div>
             </div>
