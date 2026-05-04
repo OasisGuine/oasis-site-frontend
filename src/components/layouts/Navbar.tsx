@@ -11,43 +11,8 @@ import { getAssetUrl } from "@/utils/assets";
 
 const navLinks = [
   { id: 1, title: "Common.navbar.home", link: "/" },
-  { id: 2, title: "Common.navbar.item2", link: "/who-we-are" },
-  { id: 3, title: "Common.navbar.item1", link: "/projects" },
-
-
-  //{
-  //  id: 2,
-  //  component: (
-  //    <Dropdown
-  //      label="Common.navbar.item2"
-  //      options={[
-  //        {
-  //          label: "Common.navbar.dropdowns.item3",
-  //          link: "/who-we-are",
-  //        },
-  //        {
-  //          label: "Common.navbar.dropdowns.item4",
-  //          link: "/who-we-are/#nossos-valores",
-  //        },
-  //      ]}
-  //    />
-  //  ),
- // },
- // {
- // id: 3,
- // component: (
-  //  <Dropdown
-    //  label="Common.navbar.item1"
-    //  options={[
-     //   { label: "Common.navbar.dropdowns.item1", link: "/projects" },
-      //  {
-   //       label: "Common.navbar.dropdowns.item2",
-   //       link: "/projects#meta-10k",
-      //  },
-     // ]}
-    ///>
-  //),
-//},
+   { id: 2, title: "Common.navbar.item2", link: "/who-we-are" },
+   { id: 3, title: "Common.navbar.item1", link: "/projects" },
    { id: 4, title: "Common.navbar.item3", link: "/help" },
   { id: 5, title: "Common.navbar.item4", link: "/#contact" },
 ];
@@ -112,13 +77,10 @@ const Navbar = () => {
       >
         <nav>
           <ul className="list-none font-bold flex gap-x-4 items-center">
-            {navLinks.map((item, index) => (
-              <li key={index} className="cursor-pointer text-base">
-                {item.component ? (
-                  item.component
-                ) : (
+            {navLinks.map((item) => (
+                <li key={item.id} className="cursor-pointer text-base">
                   <Link to={item.link}>
-                    {item.title.startsWith("Common") ? t(item.title) : item.title}
+                    {t(item.title)}
                   </Link>
                 )}
               </li>
