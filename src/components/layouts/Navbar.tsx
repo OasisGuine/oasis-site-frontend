@@ -12,6 +12,8 @@ import { getAssetUrl } from "@/utils/assets";
 const navLinks = [
   { id: 1, title: "Common.navbar.home", link: "/" },
   { id: 2, title: "Common.navbar.item2", link: "/who-we-are" },
+  { id: 3, title: "Common.navbar.item2", link: "/projects" },
+
 
   //{
   //  id: 2,
@@ -31,21 +33,21 @@ const navLinks = [
   //    />
   //  ),
  // },
-  {
-  id: 3,
-  component: (
-    <Dropdown
-      label="Common.navbar.item1"
-      options={[
-        { label: "Common.navbar.dropdowns.item1", link: "/projects" },
-        {
+ // {
+ // id: 3,
+ // component: (
+  //  <Dropdown
+    //  label="Common.navbar.item1"
+    //  options={[
+     //   { label: "Common.navbar.dropdowns.item1", link: "/projects" },
+      //  {
           label: "Common.navbar.dropdowns.item2",
           link: "/projects#meta-10k",
-        },
-      ]}
-    />
-  ),
-},
+      //  },
+     // ]}
+    ///>
+  //),
+//},
 //  { id: 4, title: "Common.navbar.item3", link: "/help" },
   { id: 5, title: "Common.navbar.item4", link: "/#contact" },
 ];
