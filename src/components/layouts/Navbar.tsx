@@ -12,7 +12,7 @@ import { getAssetUrl } from "@/utils/assets";
 const navLinks = [
   { id: 1, title: "Common.navbar.home", link: "/" },
   { id: 2, title: "Common.navbar.item2", link: "/who-we-are" },
-  { id: 3, title: "Common.navbar.item2", link: "/projects" },
+  { id: 3, title: "Common.navbar.item1", link: "/projects" },
 
 
   //{
