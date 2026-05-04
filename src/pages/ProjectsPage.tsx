@@ -39,25 +39,14 @@ export default function ProjectsPage() {
         
 
     <div className="relative h-[250px] w-[300px] xl:w-[400px] xl:h-[300px] xl:ml-auto mx-auto">
-    <img
-    src={getAssetUrl("/assets/img/all/kids-water.png")}
-    alt="kids water"
-    className="w-full h-full object-cover"
-    />
-    </div>
-  </div>
-        </section>
-
-<div
-  id="meta-10k"
-  className="cs-x-container xl:px-10 flex flex-col xl:items-center scroll-mt-24 items-stretch gap-4"
->
-  <img
+       <img
     src={getAssetUrl("/assets/img/all/Bom samaritano.png")}
     alt="bom samaritano school"
     className="w-full h-auto max-h-[300px] md:max-h-[400px] xl:max-h-[500px] object-contain mx-auto"
   />
 </div>
+  </div>
+        </section>
     </MainLayout>
   );
 }
