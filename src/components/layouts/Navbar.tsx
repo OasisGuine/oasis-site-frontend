@@ -78,13 +78,12 @@ const Navbar = () => {
         <nav>
           <ul className="list-none font-bold flex gap-x-4 items-center">
             {navLinks.map((item) => (
-                <li key={item.id} className="cursor-pointer text-base">
-                  <Link to={item.link}>
-                    {t(item.title)}
-                  </Link>
-                )}
-              </li>
-            ))}
+  <li key={item.id} className="cursor-pointer text-base">
+    <Link to={item.link}>
+      {t(item.title)}
+    </Link>
+  </li>
+))}
           </ul>
         </nav>
 
