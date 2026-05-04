@@ -25,18 +25,17 @@ export default function HomePage() {
           actionTranslationKey: 'HomePage.heroSection.action2',
           actionLink: '/projects',
           imageSrc: getAssetUrl('/assets/img/all/kids-smile-flower.png'),
-        }
-    {*/   
-        {
-          id: 3,
-          titleTranslationKey: 'HomePage.heroSection.title3',
-          subTitleTranslationKey: 'HomePage.heroSection.subTitle3',
-          actionTranslationKey: 'HomePage.heroSection.action3',
-          actionLink: '/projects#meta-10k',
-          imageSrc: getAssetUrl('/assets/img/all/meta10k-banner.png'),
-          imgPosition: "top",
-        }
-    */}
+        }  
+        //SLIDE 3 - META 10k comentado
+    //    {
+    //      id: 3,
+    //      titleTranslationKey: 'HomePage.heroSection.title3',
+    //      subTitleTranslationKey: 'HomePage.heroSection.subTitle3',
+    //      actionTranslationKey: 'HomePage.heroSection.action3',
+    //      actionLink: '/projects#meta-10k',
+    //      imageSrc: getAssetUrl('/assets/img/all/meta10k-banner.png'),
+    //      imgPosition: "top",
+    //    }
       ]}
       heroHeightVariant="full"
     >
