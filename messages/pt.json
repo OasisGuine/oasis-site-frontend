@@ -28,7 +28,7 @@
       "title1": "Nutrindo Esperança,<br/> Cultivando Futuros",
       "subTitle1": "NOSSA MISSÃO É CAPACITAR CRIANÇAS COM EDUCAÇÃO, FÉ E ESPERANÇA PARA UM FUTURO BRILHANTE.",
       "action1": "QUEM SOMOS",
-      "title2": "Conheça o nosso primeiro projeto apoiado",
+      "title2": "Conheça o nosso primeiro projeto concluído",
       "subTitle2": "ENTENDA O CORAÇÃO POR TRÁS DA NOSSA ESCOLHA: LEVAMOS ESPERANÇA E EDUCAÇÃO À GUINÉ-BISSAU APOIANDO A ESCOLA BOM SAMARITANO.",
       "action2": "SAIBA MAIS",
       "title3": "META 10K <br/> A Sala que vai mudar Tudo!",
@@ -47,8 +47,8 @@
     "helpSection": {
       "title": "",
       "subTitle": "Quando o mundo avança, eles ficam para trás…",
-      "descriptionP1": "Enquanto o mundo avança em tecnologia e conforto, centenas de crianças em Bantandja, na Guiné-Bissau, enfrentam a vida sem o BÁSICO: sem escola, sem alimentação regular, sem estrutura ou perspectivas de futuro.",
-      "descriptionP2": "Em uma vila onde mais de 70% da população é ANALFABETA e a maioria vive com menos de $15 dólares por mês, <purple>NÓS DECIDIMOS SER RESPOSTA PARA ESSA SITUAÇÃO!</purple>",
+      "descriptionP1": "Enquanto o mundo avança em tecnologia e conforto, centenas de crianças enfrentam a vida sem o BÁSICO: sem escola, sem alimentação regular, sem estrutura ou perspectivas de futuro.",
+      "descriptionP2": "<purple>NÓS DECIDIMOS SER RESPOSTA PARA ESSA SITUAÇÃO!</purple>",
       "item1": {
         "title": "Educação",
         "subTitle": "O seu apoio financeiro de hoje fará a diferença no futuro das crianças beneficiadas pela escola e impactará toda sua nação."
@@ -78,9 +78,9 @@
       "action": "QUEM SOMOS"
     },
     "learnSection": {
-      "title": "META 10K: A SALA QUE VAI MUDAR TUDO!",
-      "subTitle": "Com alegria e senso de missão, estamos lançando uma <strong>campanha para levantar 10.000 euros</strong> com UM OBJETIVO CLARO: <strong>Abrir a primeira sala de aula da Escola Bom Samaritano já em setembro que irá atender inicialmente 40 crianças.</strong>",
-      "subTitle2": "Você também pode fazer parte dessa missão junto conosco!",
+      "title": "Guiné-Bissau: Escola Bom Samaritano - Concluído",
+      "subTitle": "Quando começamos a apoiar a Escola Bom Samaritano da Irmã Raquel, havia um terreno, uma estrutura de casa, um sonho e muita necessidade. Graças a vocês, há agora uma escola ativa.",
+      "subTitle2": "Seja um parceiro Oásis e juntos vamos contribuir a mais projetos como este!",
       "action": "DOE AGORA"
     },
     "joinSection": {
@@ -213,8 +213,8 @@
     "section1": {
       "title": "Guiné-Bissau: Escola Bom Samaritano - Concluído",
       "description": "Nosso primeiro projeto parceiro nasceu em <purple>Bantandja</purple>, uma pequena vila no extremo leste da Guiné-Bissau, com cerca de 646 habitantes. A realidade da comunidade é marcada por mais de <purple>70% de analfabetismo, renda mensal inferior a 15 dólares, insegurança alimentar e ausência quase total de infraestrutura básica</purple>, como escolas e saúde.",
-      "description2": "Para transformar essa realidade, unimos forças com a Escola Bom Samaritano e, graças à generosidade de cada parceiro Oasis, tornamos possível apoiar a construção de uma escola que hoje acolhe crianças carentes da região, oferecendo educação, alimentação e um espaço de acolhimento e esperança. ",
-      "description3": "O que a vossa ajuda cobriu: Todo o material de construção e mão de obra necessários para concluir estas obras foram assegurados com as vossas contribuições. Cada tijolo, cada saco de cimento, cada hora de trabalho, tudo foi possível graças a vocês. O poço foi a etapa mais longa e exigente. Ficou pronto na semana passada. Quando pensamos em tudo o que foi necessário para chegar até aqui, a palavra que nos vem é: Gratidão. <purple>Hoje, existe uma escola ativa!</purple>"
+      "description2": "<purple>Para transformar essa realidade</purple>, unimos forças com a Escola Bom Samaritano e, graças à generosidade de cada parceiro Oasis, tornamos possível apoiar a construção de uma escola que hoje acolhe crianças carentes da região, oferecendo educação, alimentação e um espaço de acolhimento e esperança. ",
+      "description3": "<purple>O que a vossa ajuda cobriu:</purple> Todo o material de construção e mão de obra necessários para concluir estas obras foram assegurados com as vossas contribuições. Cada tijolo, cada saco de cimento, cada hora de trabalho, tudo foi possível graças a vocês. O poço foi a etapa mais longa e exigente. Ficou pronto na semana passada. Quando pensamos em tudo o que foi necessário para chegar até aqui, a palavra que nos vem é: Gratidão. <purple>Hoje, existe uma escola ativa!</purple>"
     },
   
     "section2": {
