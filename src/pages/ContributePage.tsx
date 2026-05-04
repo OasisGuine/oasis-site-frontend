@@ -53,7 +53,7 @@ export default function ContributePage() {
             <div className="hidden md:block md:w-1/2 relative h-96 md:h-auto">
               <img
                 alt="Bantaja community child"
-                src={getAssetUrl("/assets/img/all/donate_img.png")}
+                src={getAssetUrl("/assets/img/all/kids-writing.png")}
                 className="object-cover"
                 style={{
                   position: "absolute",
