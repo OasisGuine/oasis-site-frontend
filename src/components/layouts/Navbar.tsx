@@ -41,8 +41,8 @@ const navLinks = [
     //  options={[
      //   { label: "Common.navbar.dropdowns.item1", link: "/projects" },
       //  {
-          label: "Common.navbar.dropdowns.item2",
-          link: "/projects#meta-10k",
+   //       label: "Common.navbar.dropdowns.item2",
+   //       link: "/projects#meta-10k",
       //  },
      // ]}
     ///>
