@@ -32,10 +32,11 @@ export default function ProjectsPage() {
       <h5 className="text-gray font-medium max-w-3xl leading-8">
         {processTextWithColors(t("ProjectsPage.section1.description2"))}
       </h5>
-    </div>
-         <h5 className="max-w-3xl text-gray font-medium leading-8">
+       <h5 className="max-w-3xl text-gray font-medium leading-8">
         {processTextWithColors(t("ProjectsPage.section1.description3"))}
       </h5>
+    </div>
+        
 
     <div className="relative h-[250px] w-[300px] xl:w-[400px] xl:h-[300px] xl:ml-auto mx-auto">
     <img
@@ -47,16 +48,15 @@ export default function ProjectsPage() {
   </div>
         </section>
 
- <div
+<div
   id="meta-10k"
-  className="cs-x-container xl:px-10 flex flex-col xl:items-center scroll-mt-24 items-stretch xl:min-h-[150px] gap-4"
+  className="cs-x-container xl:px-10 flex flex-col xl:items-center scroll-mt-24 items-stretch gap-4"
 >
   <img
     src={getAssetUrl("/assets/img/all/Bom samaritano.png")}
     alt="bom samaritano school"
-    className="w-full h-full object-cover"
-    />
-  
+    className="w-full h-auto max-h-[300px] md:max-h-[400px] xl:max-h-[500px] object-contain mx-auto"
+  />
 </div>
     </MainLayout>
   );
