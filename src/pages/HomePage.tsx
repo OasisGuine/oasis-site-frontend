@@ -25,7 +25,8 @@ export default function HomePage() {
           actionTranslationKey: 'HomePage.heroSection.action2',
           actionLink: '/projects',
           imageSrc: getAssetUrl('/assets/img/all/kids-smile-flower.png'),
-        },
+        }
+    {*/   
         {
           id: 3,
           titleTranslationKey: 'HomePage.heroSection.title3',
@@ -35,6 +36,7 @@ export default function HomePage() {
           imageSrc: getAssetUrl('/assets/img/all/meta10k-banner.png'),
           imgPosition: "top",
         }
+    */}
       ]}
       heroHeightVariant="full"
     >
