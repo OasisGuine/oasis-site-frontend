@@ -48,7 +48,7 @@ const navLinks = [
     ///>
   //),
 //},
-//  { id: 4, title: "Common.navbar.item3", link: "/help" },
+   { id: 4, title: "Common.navbar.item3", link: "/help" },
   { id: 5, title: "Common.navbar.item4", link: "/#contact" },
 ];
 
