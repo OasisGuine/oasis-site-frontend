@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next";
-
+import { useState } from "react"; 
 import MainLayout from "@/components/layouts/MainLayout";
 import { processTextWithColors } from "@/utilities/textProcessor";
 import { getAssetUrl } from "@/utils/assets";
 
 export default function ProjectsPage() {
   const { t } = useTranslation();
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-
+  const [lightboxOpen, setLightboxOpen] = useState(false);  
 
   return (
     <MainLayout
