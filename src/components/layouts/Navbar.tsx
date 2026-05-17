@@ -12,16 +12,15 @@ const navLinks = [
   { id: 1, title: "Common.navbar.home", link: "/" },
   { id: 2, title: "Common.navbar.item2", link: "/who-we-are" },
 
-  // ✅ Dropdown corrigido como componente válido
+ // Dropdown 
   {
     id: 3,
     component: (
       <Dropdown
         label="Common.navbar.item1"
         options={[
-          { label: "Common.navbar.dropdowns.item1", link: "/projects" },
           {
-            label: "Common.navbar.dropdowns.item2",
+            label: "Guinea Bissau",
             link: "/projects#guinebissau",
           },
         ]}
