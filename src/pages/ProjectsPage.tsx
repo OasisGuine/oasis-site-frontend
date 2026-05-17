@@ -38,9 +38,7 @@ export default function ProjectsPage() {
               {processTextWithColors(t("ProjectsPage.section1.description2"))}
             </h5>
           </div>
-             <h5 className="max-w-3xl text-gray font-medium leading-8">
-              {processTextWithColors(t("ProjectsPage.section1.description3"))}
-            </h5>
+
 
           {/* ✅ LIGHTBOX */}
           <div className="relative h-[250px] w-[300px] xl:w-[400px] xl:h-[300px] xl:ml-auto mx-auto">
@@ -64,6 +62,9 @@ export default function ProjectsPage() {
               className="w-full h-full object-contain mx-auto cursor-zoom-in" // ✅ SEM xl:hidden
             />
           </div>
+             <h5 className="max-w-3xl text-gray font-medium leading-8">
+              {processTextWithColors(t("ProjectsPage.section1.description3"))}
+            </h5>
         </div>
       </section>
 
