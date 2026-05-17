@@ -33,7 +33,7 @@ export default function HomePage() {
           subTitleTranslationKey: 'HomePage.heroSection.subTitle2',
           actionTranslationKey: 'HomePage.heroSection.action2',
           actionLink: '/projects',
-          imageSrc: getAssetUrl('/assets/img/all/kids-smile-flower.png'),
+          imageSrc: getAssetUrl('/assets/img/all/hero_gb_agradecimento.png'),
         }  
         //SLIDE 2 - novo projeto angola
       ]}
