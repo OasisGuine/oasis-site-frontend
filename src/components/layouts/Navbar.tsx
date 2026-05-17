@@ -8,12 +8,28 @@ import Dropdown from "../inputs/Dropdown";
 import { SidebarDrawer } from "./Drawer";
 import { getAssetUrl } from "@/utils/assets";
 
-
 const navLinks = [
   { id: 1, title: "Common.navbar.home", link: "/" },
-   { id: 2, title: "Common.navbar.item2", link: "/who-we-are" },
-   { id: 3, title: "Common.navbar.item1", link: "/projects" },
-   { id: 4, title: "Common.navbar.item3", link: "/help" },
+  { id: 2, title: "Common.navbar.item2", link: "/who-we-are" },
+
+  // ✅ Dropdown corrigido como componente válido
+  {
+    id: 3,
+    component: (
+      <Dropdown
+        label="Common.navbar.item1"
+        options={[
+          { label: "Common.navbar.dropdowns.item1", link: "/projects" },
+          {
+            label: "Common.navbar.dropdowns.item2",
+            link: "/projects#guinebissau",
+          },
+        ]}
+      />
+    ),
+  },
+
+  { id: 4, title: "Common.navbar.item3", link: "/help" },
   { id: 5, title: "Common.navbar.item4", link: "/#contact" },
 ];
 
@@ -26,6 +42,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -38,7 +55,7 @@ const Navbar = () => {
     <div
       id="nav-container"
       className={clsx(
-        `fixed top-0 z-50 w-full h-24 flex items-center justify-between px-4 md:px-6 lg:px-8 transition duration-200 ease-in-out`,
+        "fixed top-0 z-50 w-full h-24 flex items-center justify-between px-4 md:px-6 lg:px-8 transition duration-200 ease-in-out",
         scrolled ? "bg-white" : "bg-red"
       )}
     >
@@ -46,18 +63,20 @@ const Navbar = () => {
       <div className="h-full flex items-center">
         <Link to="/">
           <img
-            src={getAssetUrl(`/assets/img/logo/${
-              scrolled
-                 ? "black-logo-no-description.png"
-                : "white-logo-no-description.png"
-            }`)}
-            alt="Oasis logo."
+            src={getAssetUrl(
+              `/assets/img/logo/${
+                scrolled
+                  ? "black-logo-no-description.png"
+                  : "white-logo-no-description.png"
+              }`
+            )}
+            alt="Oasis logo"
             className="h-[2.81rem] w-auto object-contain transition duration-200 ease-in-out"
           />
         </Link>
       </div>
 
-      {/* MOBILE/TABLET DOE AGORA BUTTON */}
+      {/* MOBILE CTA */}
       <div className="flex-1 flex items-center xl:hidden">
         <div className="w-full flex justify-center md:justify-end">
           <Link to="/contribute" className="md:mr-4">
@@ -68,22 +87,25 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* DESKTOP MENU - Only visible on desktop */}
+      {/* DESKTOP MENU */}
       <div
         className={clsx(
-          `hidden xl:flex justify-end items-center gap-[10px] md:mr-6 xl:gap-6 xl:mr-0`,
+          "hidden xl:flex justify-end items-center gap-[10px] md:mr-6 xl:gap-6 xl:mr-0",
           scrolled ? "text-purple" : "text-white"
         )}
       >
         <nav>
           <ul className="list-none font-bold flex gap-x-4 items-center">
             {navLinks.map((item) => (
-  <li key={item.id} className="cursor-pointer text-base">
-    <Link to={item.link}>
-      {t(item.title)}
-    </Link>
-  </li>
-))}
+              <li key={item.id} className="cursor-pointer text-base">
+                {/* ✅ suporte a dropdown OU link normal */}
+                {item.component ? (
+                  item.component
+                ) : (
+                  <Link to={item.link!}>{t(item.title!)}</Link>
+                )}
+              </li>
+            ))}
           </ul>
         </nav>
 
@@ -93,7 +115,7 @@ const Navbar = () => {
           </Button>
         </Link>
 
-       <Dropdown
+        <Dropdown
           label={i18n.language === "en" ? "EN" : "PT"}
           labelTranslate={false}
           className={clsx(
@@ -104,20 +126,22 @@ const Navbar = () => {
             { label: "EN", clickHandler: () => changeLanguage("en") },
             { label: "PT", clickHandler: () => changeLanguage("pt") },
           ]}
-        /> 
+        />
       </div>
 
-      {/* MOBILE MENU BUTTON - Only visible on mobile */}
+      {/* MOBILE MENU BUTTON */}
       <div className="flex items-center xl:hidden">
         <button
           className="flex items-center justify-center w-8 h-8"
           onClick={() => setSidebarOpen(true)}
           aria-label="Open menu"
         >
-          <img 
-            src={getAssetUrl(`/assets/img/icon/mobile-menu-${scrolled ? 'black' : 'white'}.svg`)} 
+          <img
+            src={getAssetUrl(
+              `/assets/img/icon/mobile-menu-${scrolled ? "black" : "white"}.svg`
+            )}
             alt="Menu icon"
-            className="w-6 h-6" 
+            className="w-6 h-6"
           />
         </button>
       </div>
