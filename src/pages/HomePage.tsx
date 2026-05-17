@@ -24,7 +24,7 @@ export default function HomePage() {
           subTitleTranslationKey: 'HomePage.heroSection.subTitle3',
           actionTranslationKey: 'HomePage.heroSection.action3',
           actionLink: '/contribute',
-          imageSrc: getAssetUrl('/assets/img/all/angola_desktop.png'),
+          imageSrc: getAssetUrl('/assets/img/all/angola_desktop2.png'),
           //imgPosition: "top",
         },
         {
