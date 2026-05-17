@@ -14,7 +14,7 @@ export default function ProjectsPage() {
         {
           id: 1,
           imageSrc: getAssetUrl("/assets/img/all/hero_gb_agradecimento.png"),
-          imgPosition: "30%",
+          imgPosition: "50%",
         },
       ]}
       heroHeightVariant="1/2"
