@@ -37,10 +37,10 @@ export default function ProjectsPage() {
             <h5 className="text-gray font-medium max-w-3xl leading-8">
               {processTextWithColors(t("ProjectsPage.section1.description2"))}
             </h5>
-            <h5 className="max-w-3xl text-gray font-medium leading-8">
+          </div>
+             <h5 className="max-w-3xl text-gray font-medium leading-8">
               {processTextWithColors(t("ProjectsPage.section1.description3"))}
             </h5>
-          </div>
 
           {/* ✅ LIGHTBOX */}
           <div className="relative h-[250px] w-[300px] xl:w-[400px] xl:h-[300px] xl:ml-auto mx-auto">
