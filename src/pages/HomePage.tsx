@@ -18,6 +18,15 @@ export default function HomePage() {
           actionLink: '/who-we-are',
           imageSrc: getAssetUrl('/assets/img/all/33.png')
         },
+         {
+          id: 2,
+          titleTranslationKey: 'HomePage.heroSection.title3',
+          subTitleTranslationKey: 'HomePage.heroSection.subTitle3',
+          actionTranslationKey: 'HomePage.heroSection.action3',
+          actionLink: '/contribute',
+          imageSrc: getAssetUrl('/assets/img/all/angola_desktop.png'),
+          //imgPosition: "top",
+        },
         {
           id: 3,
           titleTranslationKey: 'HomePage.heroSection.title2',
@@ -27,15 +36,6 @@ export default function HomePage() {
           imageSrc: getAssetUrl('/assets/img/all/kids-smile-flower.png'),
         }  
         //SLIDE 2 - novo projeto angola
-        {
-          id: 2,
-          titleTranslationKey: 'HomePage.heroSection.title3',
-          subTitleTranslationKey: 'HomePage.heroSection.subTitle3',
-          actionTranslationKey: 'HomePage.heroSection.action3',
-          actionLink: '/contribute',
-          imageSrc: getAssetUrl('/assets/img/all/angola_desktop.png'),
-          //imgPosition: "top",
-        }
       ]}
       
       heroHeightVariant="full"
