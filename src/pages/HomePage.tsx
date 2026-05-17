@@ -19,24 +19,25 @@ export default function HomePage() {
           imageSrc: getAssetUrl('/assets/img/all/33.png')
         },
         {
-          id: 2,
+          id: 3,
           titleTranslationKey: 'HomePage.heroSection.title2',
           subTitleTranslationKey: 'HomePage.heroSection.subTitle2',
           actionTranslationKey: 'HomePage.heroSection.action2',
           actionLink: '/projects',
           imageSrc: getAssetUrl('/assets/img/all/kids-smile-flower.png'),
         }  
-        //SLIDE 3 - META 10k comentado
-    //    {
-    //      id: 3,
-    //      titleTranslationKey: 'HomePage.heroSection.title3',
-    //      subTitleTranslationKey: 'HomePage.heroSection.subTitle3',
-    //      actionTranslationKey: 'HomePage.heroSection.action3',
-    //      actionLink: '/projects#meta-10k',
-    //      imageSrc: getAssetUrl('/assets/img/all/meta10k-banner.png'),
-    //      imgPosition: "top",
-    //    }
+        //SLIDE 2 - novo projeto angola
+        {
+          id: 2,
+          titleTranslationKey: 'HomePage.heroSection.title3',
+          subTitleTranslationKey: 'HomePage.heroSection.subTitle3',
+          actionTranslationKey: 'HomePage.heroSection.action3',
+          actionLink: '/contribute',
+          imageSrc: getAssetUrl('/assets/img/all/angola_desktop.png'),
+          //imgPosition: "top",
+        }
       ]}
+      
       heroHeightVariant="full"
     >
       <AboutSection />
