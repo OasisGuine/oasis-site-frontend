@@ -20,7 +20,7 @@ const navLinks = [
         label="Common.navbar.item1"
         options={[
           {
-            label: "Common.navbar.dropdowns.item2"
+            label: "Common.navbar.dropdowns.item2",
             link: "/projects#guinebissau",
           },
         ]}
