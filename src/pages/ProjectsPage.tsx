@@ -34,13 +34,18 @@ export default function ProjectsPage() {
           <div className="flex-1 text-start flex flex-col gap-4">
             <h5 className="text-gray font-medium max-w-3xl leading-8">
               {processTextWithColors(
-                t("ProjectsPage.section1.description")
+                t("ProjectsPage.section1.description") 
               )}
             </h5>
 
             <h5 className="text-gray font-medium max-w-3xl leading-8">
               {processTextWithColors(
                 t("ProjectsPage.section1.description2")
+              )}
+            </h5>
+             <h5 className="text-gray font-medium max-w-3xl leading-8">
+              {processTextWithColors(
+                t("ProjectsPage.section1.description2b")
               )}
             </h5>
           </div>
