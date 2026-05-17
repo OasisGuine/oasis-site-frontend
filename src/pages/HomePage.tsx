@@ -18,8 +18,16 @@ export default function HomePage() {
           actionLink: '/who-we-are',
           imageSrc: getAssetUrl('/assets/img/all/33.png')
         },
-         {
+          {
           id: 2,
+          titleTranslationKey: 'HomePage.heroSection.title2',
+          subTitleTranslationKey: 'HomePage.heroSection.subTitle2',
+          actionTranslationKey: 'HomePage.heroSection.action2',
+          actionLink: '/projects',
+          imageSrc: getAssetUrl('/assets/img/all/hero_gb_agradecimento.png'),
+        },  
+         {
+          id: 3,
           titleTranslationKey: 'HomePage.heroSection.title3',
           subTitleTranslationKey: 'HomePage.heroSection.subTitle3',
           actionTranslationKey: 'HomePage.heroSection.action3',
@@ -27,16 +35,7 @@ export default function HomePage() {
           imageSrc: getAssetUrl('/assets/img/all/angola_desktop2.png'),
           //imgPosition: "top",
         },
-        {
-          id: 3,
-          titleTranslationKey: 'HomePage.heroSection.title2',
-          subTitleTranslationKey: 'HomePage.heroSection.subTitle2',
-          actionTranslationKey: 'HomePage.heroSection.action2',
-          actionLink: '/projects',
-          imageSrc: getAssetUrl('/assets/img/all/hero_gb_agradecimento.png'),
-        }  
-        //SLIDE 2 - novo projeto angola
-      ]}
+ ]}
       
       heroHeightVariant="full"
     >
